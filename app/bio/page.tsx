@@ -260,7 +260,7 @@ export default function BioPage() {
                         {/* Audio instance */}
                         <audio
                           ref={audioRef}
-                          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                          src="https://assets.mixkit.co/music/preview/mixkit-valley-sunset-122.mp3"
                           preload="auto"
                           onTimeUpdate={handleAudioTimeUpdate}
                           onLoadedMetadata={handleLoadedMetadata}
