@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-light: #FBF8F3;
+  --color-bg-alt: #F2ECE3;
+  --color-brand-amber: #C8852E;
+  --color-brand-amber-deep: #9E6418;
+  --color-brand-blush: #D9A38A;
+  --color-brand-deepteal: #2C4A47;
+  --color-brand-deepteal-soft: #5A7470;
+  --color-ink: #322C2B;
+  --color-ink-soft: #6E655E;
+  
+  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-body: var(--font-outfit), system-ui, sans-serif;
+}
+
+/* Custom background animations / soft light glow */
+.light-bloom {
+  background: radial-gradient(circle at 70% 20%, rgba(200, 133, 46, 0.15) 0%, transparent 60%);
+}
+
+.glow-hover {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 8px 24px rgba(200, 133, 46, 0.35);
+}
+
+/* Smooth motion custom adjustments */
+.arch-mask {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+

@@ -1,0 +1,139 @@
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
+import { Compass, Wind, RefreshCw, Activity, Waves, Heart, MessageCircle, ArrowRight, Sparkles } from 'lucide-react';
+import CallToActionSection from '@/components/CallToActionSection';
+
+const modalitiesList = [
+  {
+    slug: 'breathwork',
+    title: 'Transformative Breathwork',
+    excerpt: 'Access and release what traditional talk therapy cannot reach. By changing how you breathe, you bypass the cognitive mind to purge deep emotional baggage and physical patterns.',
+    icon: Wind,
+    detailLink: '/modalities/breathwork'
+  },
+  {
+    slug: 'body-reset',
+    title: 'Body Reset Therapy',
+    excerpt: 'Whole-system structural realignment. When one part of the body is restricted, the entire organism compensates. Realign the skeleton and release years of muscular binding.',
+    icon: RefreshCw,
+    detailLink: '/modalities/body-reset'
+  },
+  {
+    slug: 'massages',
+    title: 'Massages & Chi Core Release',
+    excerpt: 'Chi Core Release (Chi Nei Tsang) and intuitive bodywork to let the somatic tissue let go. Massaging the belly to digest emotions, toxins, and historic trauma.',
+    icon: Activity,
+    detailLink: '/modalities/massages'
+  },
+  {
+    slug: 'water-therapy',
+    title: 'Harmonic Flow Aquatic Arts',
+    excerpt: 'Surrender completely, held with care by the oldest and gentlest element of all. Surface float meditation and brief, safe submersions developed under Damla Yaku.',
+    icon: Waves,
+    detailLink: '/modalities/water-therapy'
+  },
+  {
+    slug: 'hypnotherapy',
+    title: 'Hypnotherapy',
+    excerpt: 'Work directly with the subconscious blueprint in person or online. Eradicate stubborn lifestyle patterns, release anxiety, and shift long-standing structural fears.',
+    icon: Heart,
+    detailLink: '/modalities/hypnotherapy'
+  },
+  {
+    slug: 'coaching',
+    title: 'Coaching & Mentoring',
+    excerpt: 'Practical, down-to-earth support for health, mindset, herbs, and diet in person or online. Miro in your corner, listening deeply to help you structure your next active step.',
+    icon: MessageCircle,
+    detailLink: '/modalities/coaching'
+  }
+];
+
+export default function ModalitiesHubPage() {
+  return (
+    <div className="bg-[#FBF8F3]">
+      
+      {/* Editorial Header */}
+      <section className="py-16 md:py-24 max-w-4xl mx-auto px-6 text-center space-y-6">
+        <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
+          Integrated Modalities
+        </span>
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight">
+          I don&apos;t work in one method. I work in what <span className="font-display italic text-[#C8852E]">your moment</span> needs.
+        </h1>
+        <p className="font-body text-lg md:text-xl text-[#6E655E] font-light leading-relaxed max-w-2xl mx-auto">
+          Each of these is powerful on its own. The real depth comes from how they are combined — drawn together around you, the way a craftsman reaches for the right tool at the right time.
+        </p>
+        <p className="font-body text-sm font-light text-[#6E655E] italic">
+          You do not need to select from this list prior to our call. This serves purely to show what lives in the toolkit.
+        </p>
+      </section>
+
+      {/* Asymmetric Alternating Row Layout (Scheme B rule) */}
+      <section className="py-16 bg-white border-y border-[#F2ECE3]">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 divide-y divide-[#F2ECE3] space-y-24">
+          
+          {modalitiesList.map((mod, idx) => {
+            const IconComponent = mod.icon;
+            const isEven = idx % 2 === 0;
+
+            return (
+              <div 
+                key={mod.slug} 
+                className={`pt-24 first:pt-0 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center`}
+              >
+                {/* Asymmetric positioning based on Even/Odd */}
+                <div className={`lg:col-span-6 space-y-6 ${isEven ? 'lg:order-first' : 'lg:order-last'}`}>
+                  <div className="w-12 h-12 bg-[#C8852E]/10 rounded-full flex items-center justify-center text-[#C8852E]">
+                    <IconComponent className="w-5.5 h-5.5 stroke-[1.5]" />
+                  </div>
+                  
+                  <span className="font-mono text-[10px] uppercase font-semibold text-[#6E655E] tracking-widest block">
+                    Pathway 0{idx + 1}
+                  </span>
+                  
+                  <h3 className="font-display text-2xl sm:text-3xl text-[#322C2B] font-light tracking-wide leading-snug">
+                    {mod.title}
+                  </h3>
+                  
+                  <p className="font-body text-sm md:text-base text-[#6E655E] font-light leading-relaxed">
+                    {mod.excerpt}
+                  </p>
+
+                  <div className="pt-2">
+                    <Link
+                      href={mod.detailLink}
+                      className="text-[#C8852E] hover:text-[#9E6418] font-body text-sm font-medium inline-flex items-center gap-1 group transition-all"
+                    >
+                      Explore this modality 
+                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Alternating illustrative imagery with thin arched frames */}
+                <div className="lg:col-span-6 flex justify-center">
+                  <div className="relative w-full max-w-md aspect-[4/3] rounded-xl overflow-hidden shadow-lg border border-[#F2ECE3] group">
+                    <img
+                      src={`https://picsum.photos/seed/miro_mod_${mod.slug}/800/600`}
+                      alt={mod.title}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover grayscale-[10%] brightness-95 transition-transform duration-1000 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#322C2B]/15 via-transparent to-transparent pointer-events-none" />
+                  </div>
+                </div>
+
+              </div>
+            );
+          })}
+
+        </div>
+      </section>
+
+      {/* Main Closing Section */}
+      <CallToActionSection />
+    </div>
+  );
+}

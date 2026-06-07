@@ -1,0 +1,6 @@
+{
+  "name": "Miro Kloosterman",
+  "description": "Healer, Coach, and Retreat Guide — Come home to yourself. Feel alive again.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
