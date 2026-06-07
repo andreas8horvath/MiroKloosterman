@@ -3,6 +3,7 @@
 import React from 'react';
 import { Star, MessageSquare, Heart, Sparkles } from 'lucide-react';
 import CallToActionSection from '@/components/CallToActionSection';
+import ScrollReveal from '@/components/ScrollReveal';
 
 export default function ReviewsPage() {
   const breathworkReviews = [
@@ -73,17 +74,19 @@ export default function ReviewsPage() {
     <div className="bg-[#FBF8F3]">
       
       {/* Editorial Header */}
-      <section className="py-16 md:py-24 max-w-4xl mx-auto px-6 text-center space-y-6">
-        <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
-          Client Journals
-        </span>
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight">
-          In their <span className="font-display italic text-[#C8852E]">own words.</span>
-        </h1>
-        <p className="font-body text-lg md:text-xl text-[#6E655E] font-light leading-relaxed max-w-2xl mx-auto">
-          The thing people mention most after working with me is not a singular technique. It is how they felt: safe, seen, and genuinely cared for. Here is what that has looked like.
-        </p>
-      </section>
+      <ScrollReveal variant="up" duration={0.8}>
+        <section className="py-16 md:py-24 max-w-4xl mx-auto px-6 text-center space-y-6">
+          <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
+            Client Journals
+          </span>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight">
+            In their <span className="font-display italic text-[#C8852E]">own words.</span>
+          </h1>
+          <p className="font-body text-lg md:text-xl text-[#6E655E] font-light leading-relaxed max-w-2xl mx-auto">
+            The thing people mention most after working with me is not a singular technique. It is how they felt: safe, seen, and genuinely cared for. Here is what that has looked like.
+          </p>
+        </section>
+      </ScrollReveal>
 
       {/* Review Categories Alternating Lists */}
       <section className="py-16 bg-white border-y border-[#F2ECE3] space-y-24">
@@ -95,17 +98,19 @@ export default function ReviewsPage() {
             <span className="h-px bg-[#F2ECE3] flex-1" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 overflow-hidden">
             {breathworkReviews.map((rev, idx) => (
-              <div key={idx} className="bg-[#FBF8F3] border border-[#F2ECE3] p-8 rounded-xl flex flex-col justify-between hover:shadow-md transition-all">
-                <blockquote className="font-display italic text-[#322C2B] text-base leading-relaxed mb-6 font-light">
-                  &ldquo;{rev.quote}&rdquo;
-                </blockquote>
-                <div className="text-xs font-body border-t border-[#F2ECE3]/80 pt-4">
-                  <span className="font-semibold text-[#322C2B] block">{rev.author}</span>
-                  <span className="text-[#6E655E] text-[10px] uppercase tracking-wider">{rev.desc}</span>
+              <ScrollReveal key={idx} variant="up" duration={0.8} delay={idx * 0.08}>
+                <div className="bg-[#FBF8F3] border border-[#F2ECE3] p-8 rounded-xl flex flex-col justify-between hover:shadow-md transition-all h-full">
+                  <blockquote className="font-display italic text-[#322C2B] text-base leading-relaxed mb-6 font-light">
+                    &ldquo;{rev.quote}&rdquo;
+                  </blockquote>
+                  <div className="text-xs font-body border-t border-[#F2ECE3]/80 pt-4">
+                    <span className="font-semibold text-[#322C2B] block">{rev.author}</span>
+                    <span className="text-[#6E655E] text-[10px] uppercase tracking-wider">{rev.desc}</span>
+                  </div>
                 </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -117,17 +122,19 @@ export default function ReviewsPage() {
             <span className="h-px bg-[#F2ECE3] flex-1" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 overflow-hidden">
             {bodyworkReviews.map((rev, idx) => (
-              <div key={idx} className="bg-[#FBF8F3] border border-[#F2ECE3] p-8 rounded-xl flex flex-col justify-between hover:shadow-md transition-all">
-                <blockquote className="font-display italic text-[#322C2B] text-base leading-relaxed mb-6 font-light">
-                  &ldquo;{rev.quote}&rdquo;
-                </blockquote>
-                <div className="text-xs font-body border-t border-[#F2ECE3]/80 pt-4">
-                  <span className="font-semibold text-[#322C2B] block">{rev.author}</span>
-                  <span className="text-[#6E655E] text-[10px] uppercase tracking-wider">{rev.desc}</span>
+              <ScrollReveal key={idx} variant="up" duration={0.8} delay={idx * 0.08}>
+                <div className="bg-[#FBF8F3] border border-[#F2ECE3] p-8 rounded-xl flex flex-col justify-between hover:shadow-md transition-all h-full">
+                  <blockquote className="font-display italic text-[#322C2B] text-base leading-relaxed mb-6 font-light">
+                    &ldquo;{rev.quote}&rdquo;
+                  </blockquote>
+                  <div className="text-xs font-body border-t border-[#F2ECE3]/80 pt-4">
+                    <span className="font-semibold text-[#322C2B] block">{rev.author}</span>
+                    <span className="text-[#6E655E] text-[10px] uppercase tracking-wider">{rev.desc}</span>
+                  </div>
                 </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -139,17 +146,19 @@ export default function ReviewsPage() {
             <span className="h-px bg-[#F2ECE3] flex-1" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden">
             {coachingReviews.map((rev, idx) => (
-              <div key={idx} className="bg-[#FBF8F3] border border-[#F2ECE3] p-8 rounded-xl flex flex-col justify-between hover:shadow-md transition-all">
-                <blockquote className="font-display italic text-[#322C2B] text-base leading-relaxed mb-6 font-light">
-                  &ldquo;{rev.quote}&rdquo;
-                </blockquote>
-                <div className="text-xs font-body border-t border-[#F2ECE3]/80 pt-4">
-                  <span className="font-semibold text-[#322C2B] block">{rev.author}</span>
-                  <span className="text-[#6E655E] text-[10px] uppercase tracking-wider">{rev.desc}</span>
+              <ScrollReveal key={idx} variant="up" duration={0.8} delay={idx * 0.08}>
+                <div className="bg-[#FBF8F3] border border-[#F2ECE3] p-8 rounded-xl flex flex-col justify-between hover:shadow-md transition-all h-full">
+                  <blockquote className="font-display italic text-[#322C2B] text-base leading-relaxed mb-6 font-light">
+                    &ldquo;{rev.quote}&rdquo;
+                  </blockquote>
+                  <div className="text-xs font-body border-t border-[#F2ECE3]/80 pt-4">
+                    <span className="font-semibold text-[#322C2B] block">{rev.author}</span>
+                    <span className="text-[#6E655E] text-[10px] uppercase tracking-wider">{rev.desc}</span>
+                  </div>
                 </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

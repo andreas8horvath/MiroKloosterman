@@ -33,7 +33,7 @@ export default function CallToActionSection() {
         <div className="pt-4">
           <button
             onClick={() => setIsOpen(true)}
-            className="bg-[#C8852E] hover:bg-[#9E6418] text-white font-body text-base px-10 py-4 rounded-full transition-all tracking-wide shadow-lg hover:shadow-xl hover:scale-[1.02] cursor-pointer inline-flex items-center gap-2.5 font-medium animate-pulse"
+            className="bg-[#C8852E] hover:bg-[#9E6418] text-white font-body text-base px-10 py-4 rounded-full transition-all duration-300 ease-out tracking-wide shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:scale-[1.01] hover:brightness-105 cursor-pointer inline-flex items-center gap-2.5 font-medium relative overflow-hidden group"
           >
             <Calendar className="w-5 h-5" />
             Book a free discovery call

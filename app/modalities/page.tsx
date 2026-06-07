@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Compass, Wind, RefreshCw, Activity, Waves, Heart, MessageCircle, ArrowRight, Sparkles } from 'lucide-react';
 import CallToActionSection from '@/components/CallToActionSection';
+import ScrollReveal from '@/components/ScrollReveal';
 
 const modalitiesList = [
   {
@@ -55,23 +56,25 @@ export default function ModalitiesHubPage() {
     <div className="bg-[#FBF8F3]">
       
       {/* Editorial Header */}
-      <section className="py-16 md:py-24 max-w-4xl mx-auto px-6 text-center space-y-6">
-        <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
-          Integrated Modalities
-        </span>
-        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight">
-          I don&apos;t work in one method. I work in what <span className="font-display italic text-[#C8852E]">your moment</span> needs.
-        </h1>
-        <p className="font-body text-lg md:text-xl text-[#6E655E] font-light leading-relaxed max-w-2xl mx-auto">
-          Each of these is powerful on its own. The real depth comes from how they are combined — drawn together around you, the way a craftsman reaches for the right tool at the right time.
-        </p>
-        <p className="font-body text-sm font-light text-[#6E655E] italic">
-          You do not need to select from this list prior to our call. This serves purely to show what lives in the toolkit.
-        </p>
+      <section className="py-16 md:py-24 max-w-4xl mx-auto px-6 text-center space-y-6 overflow-hidden">
+        <ScrollReveal variant="up" duration={0.8}>
+          <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
+            Integrated Modalities
+          </span>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight mt-4">
+            I don&apos;t work in one method. I work in what <span className="font-display italic text-[#C8852E]">your moment</span> needs.
+          </h1>
+          <p className="font-body text-lg md:text-xl text-[#6E655E] font-light leading-relaxed max-w-2xl mx-auto mt-4">
+            Each of these is powerful on its own. The real depth comes from how they are combined — drawn together around you, the way a craftsman reaches for the right tool at the right time.
+          </p>
+          <p className="font-body text-sm font-light text-[#6E655E] italic mt-4">
+            You do not need to select from this list prior to our call. This serves purely to show what lives in the toolkit.
+          </p>
+        </ScrollReveal>
       </section>
 
       {/* Asymmetric Alternating Row Layout (Scheme B rule) */}
-      <section className="py-16 bg-white border-y border-[#F2ECE3]">
+      <section className="py-16 bg-white border-y border-[#F2ECE3] overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 md:px-12 divide-y divide-[#F2ECE3] space-y-24">
           
           {modalitiesList.map((mod, idx) => {
@@ -81,48 +84,52 @@ export default function ModalitiesHubPage() {
             return (
               <div 
                 key={mod.slug} 
-                className={`pt-24 first:pt-0 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center`}
+                className="pt-24 first:pt-0 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
               >
                 {/* Asymmetric positioning based on Even/Odd */}
                 <div className={`lg:col-span-6 space-y-6 ${isEven ? 'lg:order-first' : 'lg:order-last'}`}>
-                  <div className="w-12 h-12 bg-[#C8852E]/10 rounded-full flex items-center justify-center text-[#C8852E]">
-                    <IconComponent className="w-5.5 h-5.5 stroke-[1.5]" />
-                  </div>
-                  
-                  <span className="font-mono text-[10px] uppercase font-semibold text-[#6E655E] tracking-widest block">
-                    Pathway 0{idx + 1}
-                  </span>
-                  
-                  <h3 className="font-display text-2xl sm:text-3xl text-[#322C2B] font-light tracking-wide leading-snug">
-                    {mod.title}
-                  </h3>
-                  
-                  <p className="font-body text-sm md:text-base text-[#6E655E] font-light leading-relaxed">
-                    {mod.excerpt}
-                  </p>
+                  <ScrollReveal variant={isEven ? 'right' : 'left'} duration={0.85}>
+                    <div className="w-12 h-12 bg-[#C8852E]/10 rounded-full flex items-center justify-center text-[#C8852E]">
+                      <IconComponent className="w-5.5 h-5.5 stroke-[1.5]" />
+                    </div>
+                    
+                    <span className="font-mono text-[10px] uppercase font-semibold text-[#6E655E] tracking-widest block mt-4">
+                      Pathway 0{idx + 1}
+                    </span>
+                    
+                    <h3 className="font-display text-2xl sm:text-3xl text-[#322C2B] font-light tracking-wide leading-snug mt-2">
+                      {mod.title}
+                    </h3>
+                    
+                    <p className="font-body text-sm md:text-base text-[#6E655E] font-light leading-relaxed mt-3">
+                      {mod.excerpt}
+                    </p>
 
-                  <div className="pt-2">
-                    <Link
-                      href={mod.detailLink}
-                      className="text-[#C8852E] hover:text-[#9E6418] font-body text-sm font-medium inline-flex items-center gap-1 group transition-all"
-                    >
-                      Explore this modality 
-                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </div>
+                    <div className="pt-4">
+                      <Link
+                        href={mod.detailLink}
+                        className="text-[#C8852E] hover:text-[#9E6418] font-body text-sm font-medium inline-flex items-center gap-1 group transition-all"
+                      >
+                        Explore this modality 
+                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                      </Link>
+                    </div>
+                  </ScrollReveal>
                 </div>
 
                 {/* Alternating illustrative imagery with thin arched frames */}
                 <div className="lg:col-span-6 flex justify-center">
-                  <div className="relative w-full max-w-md aspect-[4/3] rounded-xl overflow-hidden shadow-lg border border-[#F2ECE3] group">
-                    <img
-                      src={`https://picsum.photos/seed/miro_mod_${mod.slug}/800/600`}
-                      alt={mod.title}
-                      referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover grayscale-[10%] brightness-95 transition-transform duration-1000 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#322C2B]/15 via-transparent to-transparent pointer-events-none" />
-                  </div>
+                  <ScrollReveal variant={isEven ? 'left' : 'right'} duration={0.85} delay={0.15} className="w-full max-w-md">
+                    <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg border border-[#F2ECE3] group">
+                      <img
+                        src={`https://picsum.photos/seed/miro_mod_${mod.slug}/800/600`}
+                        alt={mod.title}
+                        referrerPolicy="no-referrer"
+                        className="w-full h-full object-cover grayscale-[10%] brightness-95 transition-transform duration-1000 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#322C2B]/15 via-transparent to-transparent pointer-events-none" />
+                    </div>
+                  </ScrollReveal>
                 </div>
 
               </div>
