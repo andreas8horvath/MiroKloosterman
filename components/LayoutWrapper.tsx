@@ -1,12 +1,26 @@
 'use client';
 
 import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Header from './Header';
 import Footer from './Footer';
 import DiscoveryModal from './DiscoveryModal';
 
 export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+  const pathname = usePathname();
+  const isBioPage = pathname === '/bio';
+
+  if (isBioPage) {
+    return (
+      <>
+        <main className="flex-grow min-h-screen flex flex-col bg-bg-light">
+          {children}
+        </main>
+        <DiscoveryModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
+      </>
+    );
+  }
 
   return (
     <>

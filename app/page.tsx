@@ -108,8 +108,8 @@ export default function HomePage() {
               <div className="absolute inset-0 border border-[#C8852E]/10 rounded-t-full p-2 m-2 pointer-events-none" />
               <div className="w-full h-full relative rounded-t-full overflow-hidden">
                 <img
-                  src="https://picsum.photos/seed/miro_sunrise/800/1060"
-                  alt="Miro Kloosterman - Backlit Sunrise Yoga Healing"
+                  src="https://res.cloudinary.com/dt806m3nm/image/upload/c_scale,w_800,f_auto,q_auto/v1776505357/4-1920w.jpg_uiikl9.webp"
+                  alt="Miro Kloosterman - Portrait"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover grayscale-[10%] brightness-[1.02] contrast-[0.98] transition-transform duration-1000 group-hover:scale-105"
                 />
