@@ -38,6 +38,9 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const pathname = usePathname();
 
+  const isHeroPage = pathname !== '/privacy';
+  const showSolidHeader = isScrolled || !isHeroPage;
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
@@ -58,17 +61,23 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled 
+      showSolidHeader 
         ? 'bg-[#FBF8F3]/80 backdrop-blur-md border-b border-[#F2ECE3] py-4 shadow-sm' 
         : 'bg-transparent py-6'
     }`}>
       <div id="nav-container" className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo Lockup */}
         <Link href="/" className="group flex flex-col items-start select-none">
-          <span className="font-display text-2xl tracking-wide text-[#322C2B] font-light transition-colors group-hover:text-[#C8852E]">
+          <span className={`font-display text-2xl tracking-wide font-light transition-colors ${
+            showSolidHeader 
+              ? 'text-[#322C2B] group-hover:text-[#C8852E]' 
+              : 'text-[#FBF8F3] group-hover:text-[#D9A38A]'
+          }`}>
             Miro Kloosterman
           </span>
-          <span className="font-body text-[10px] tracking-[0.2em] text-[#6E655E] uppercase -mt-0.5 pointer-events-none">
+          <span className={`font-body text-[10px] tracking-[0.2em] uppercase -mt-0.5 pointer-events-none transition-colors ${
+            showSolidHeader ? 'text-[#6E655E]' : 'text-[#E6E1DA]/70'
+          }`}>
             Body · Mind · Soul
           </span>
         </Link>
@@ -90,7 +99,9 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
                   <button className={`flex items-center text-sm font-medium tracking-wide transition-colors ${
-                    isActive ? 'text-[#C8852E]' : 'text-[#322C2B] hover:text-[#C8852E]'
+                    isActive 
+                      ? (showSolidHeader ? 'text-[#C8852E]' : 'text-[#D9A38A]') 
+                      : (showSolidHeader ? 'text-[#322C2B] hover:text-[#C8852E]' : 'text-[#FBF8F3]/90 hover:text-[#D9A38A]')
                   }`}>
                     {link.label}
                     <ChevronDown className="ml-1 w-3.5 h-3.5 opacity-60 transition-transform duration-300 group-hover:rotate-180" />
@@ -122,14 +133,16 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
                 key={link.href}
                 href={link.href}
                 className={`text-sm font-medium tracking-wide transition-colors relative py-2 ${
-                  isActive ? 'text-[#C8852E]' : 'text-[#322C2B] hover:text-[#C8852E]'
+                  isActive 
+                    ? (showSolidHeader ? 'text-[#C8852E]' : 'text-[#D9A38A]') 
+                    : (showSolidHeader ? 'text-[#322C2B] hover:text-[#C8852E]' : 'text-[#FBF8F3]/90 hover:text-[#D9A38A]')
                 }`}
               >
                 {link.label}
                 {isActive && (
                   <motion.span 
                     layoutId="activeIndicator"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#C8852E]"
+                    className={`absolute bottom-0 left-0 right-0 h-0.5 ${showSolidHeader ? 'bg-[#C8852E]' : 'bg-[#D9A38A]'}`}
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -142,7 +155,11 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
         <div className="hidden lg:flex items-center space-x-4">
           <button
             onClick={onOpenBooking}
-            className="bg-[#C8852E] text-white hover:bg-[#9E6418] font-body text-sm px-6 py-2.5 rounded-full transition-all tracking-wide shadow-sm hover:shadow-md cursor-pointer inline-flex items-center gap-2"
+            className={`font-body text-sm px-6 py-2.5 rounded-full transition-all tracking-wide shadow-sm hover:shadow-md cursor-pointer inline-flex items-center gap-2 ${
+              showSolidHeader 
+                ? 'bg-[#C8852E] text-white hover:bg-[#9E6418]' 
+                : 'bg-[#D9A38A] text-[#1E1918] hover:bg-[#FBF8F3] hover:text-[#322C2B]'
+            }`}
           >
             <Calendar className="w-4 h-4" />
             Book a free discovery call
@@ -153,7 +170,11 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
         <div className="flex items-center lg:hidden space-x-4">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 text-[#322C2B] hover:text-[#C8852E] transition-colors"
+            className={`p-2 transition-colors ${
+              showSolidHeader 
+                ? 'text-[#322C2B] hover:text-[#C8852E]' 
+                : 'text-[#FBF8F3]/90 hover:text-[#D9A38A]'
+            }`}
             aria-label="Toggle Menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

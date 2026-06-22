@@ -11,6 +11,8 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
   const pathname = usePathname();
   const isBioPage = pathname === '/bio';
 
+  const needsHeaderOffset = pathname === '/privacy';
+
   if (isBioPage) {
     return (
       <>
@@ -25,7 +27,7 @@ export default function LayoutWrapper({ children }: { children: React.ReactNode 
   return (
     <>
       <Header onOpenBooking={() => setIsBookingOpen(true)} />
-      <main className="flex-grow pt-20 md:pt-24 min-h-screen flex flex-col">
+      <main className={`flex-grow min-h-screen flex flex-col ${needsHeaderOffset ? 'pt-20 md:pt-24' : ''}`}>
         {children}
       </main>
       <Footer onOpenBooking={() => setIsBookingOpen(true)} />
