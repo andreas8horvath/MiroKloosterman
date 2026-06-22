@@ -4,6 +4,7 @@ import React from 'react';
 import { Star, MessageSquare, Heart, Sparkles } from 'lucide-react';
 import CallToActionSection from '@/components/CallToActionSection';
 import ScrollReveal from '@/components/ScrollReveal';
+import FullscreenHero from '@/components/FullscreenHero';
 
 export default function ReviewsPage() {
   const breathworkReviews = [
@@ -73,20 +74,23 @@ export default function ReviewsPage() {
   return (
     <div className="bg-[#FBF8F3]">
       
-      {/* Editorial Header */}
-      <ScrollReveal variant="up" duration={0.8}>
-        <section className="py-16 md:py-24 max-w-4xl mx-auto px-6 text-center space-y-6">
-          <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
+      {/* Editorial Header (True Fullscreen) */}
+      <FullscreenHero
+        backgroundImage="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=2000"
+        overlayOpacity={0.5}
+      >
+        <div className="max-w-4xl mx-auto space-y-6">
+          <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#D9A38A] block">
             Client Journals
           </span>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight">
-            In their <span className="font-display italic text-[#C8852E]">own words.</span>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FBF8F3] leading-[1.12] tracking-tight">
+            In their <span className="font-display italic text-[#D9A38A]">own words.</span>
           </h1>
-          <p className="font-body text-lg md:text-xl text-[#6E655E] font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-base sm:text-lg md:text-xl text-[#E6E1DA]/95 font-light leading-relaxed max-w-2xl mx-auto">
             The thing people mention most after working with me is not a singular technique. It is how they felt: safe, seen, and genuinely cared for. Here is what that has looked like.
           </p>
-        </section>
-      </ScrollReveal>
+        </div>
+      </FullscreenHero>
 
       {/* Review Categories Alternating Lists */}
       <section className="py-16 bg-white border-y border-[#F2ECE3] space-y-24">

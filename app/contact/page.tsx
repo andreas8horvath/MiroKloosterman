@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, Instagram, Send, CheckCircle, Clock, Calendar, HelpCircle, User } from 'lucide-react';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
 import ScrollReveal from '@/components/ScrollReveal';
+import FullscreenHero from '@/components/FullscreenHero';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -44,23 +45,26 @@ export default function ContactPage() {
   return (
     <div className="bg-[#FBF8F3] min-h-screen">
       
-      {/* Editorial Header */}
-      <ScrollReveal variant="up" duration={0.8}>
-        <section className="py-16 md:py-24 max-w-4xl mx-auto px-6 text-center space-y-6">
-          <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
+      {/* Editorial Header (True Fullscreen) */}
+      <FullscreenHero
+        backgroundImage="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&q=80&w=2000"
+        overlayOpacity={0.48}
+      >
+        <div className="max-w-4xl mx-auto space-y-6">
+          <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#D9A38A] block">
             Open Door
           </span>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight">
-            Let&apos;s start with a <span className="font-display italic text-[#C8852E]">conversation.</span>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FBF8F3] leading-[1.12] tracking-tight">
+            Let&apos;s start with a <span className="font-display italic text-[#D9A38A]">conversation.</span>
           </h1>
-          <p className="font-body text-lg md:text-xl text-[#6E655E] font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-base sm:text-lg md:text-xl text-[#E6E1DA]/95 font-light leading-relaxed max-w-2xl mx-auto">
             If something here resonated, the best next step is simple: a free discovery call. You tell me what is going on, I listen properly, and together we feel out whether I am the right person to guide you on this stretch of the path.
           </p>
-          <p className="font-body text-sm font-light text-[#C8852E] italic">
+          <p className="font-body text-xs sm:text-sm font-light text-[#D9A38A] italic tracking-wider">
             No pressure, no script — just an honest, humane conversation.
           </p>
-        </section>
-      </ScrollReveal>
+        </div>
+      </FullscreenHero>
 
       {/* Main contact content segment */}
       <section className="py-12 bg-white border-t border-[#F2ECE3]">

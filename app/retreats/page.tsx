@@ -6,28 +6,32 @@ import { Compass, Users, MapPin, ArrowRight, ShieldCheck, Heart } from 'lucide-r
 import { motion } from 'motion/react';
 import CallToActionSection from '@/components/CallToActionSection';
 import ScrollReveal from '@/components/ScrollReveal';
+import FullscreenHero from '@/components/FullscreenHero';
 
 export default function RetreatsHubPage() {
   return (
     <div className="bg-[#FBF8F3] overflow-hidden">
       
-      {/* Page Header */}
-      <ScrollReveal variant="up" duration={0.8}>
-        <section className="py-16 md:py-24 max-w-4xl mx-auto px-6 text-center space-y-6">
-          <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
+      {/* Page Header (True Fullscreen) */}
+      <FullscreenHero
+        backgroundImage="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=2000"
+        overlayOpacity={0.52}
+      >
+        <div className="max-w-4xl mx-auto space-y-6">
+          <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#D9A38A] block">
             Immersive Containers
           </span>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight">
-            Real change needs <span className="font-display italic text-[#C8852E]">time, depth,</span> and a container that holds you.
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FBF8F3] leading-[1.12] tracking-tight">
+            Real change needs <span className="font-display italic text-[#D9A38A]">time, depth,</span> and a container that holds you.
           </h1>
-          <p className="font-body text-lg md:text-xl text-[#6E655E] font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="font-body text-base sm:text-lg md:text-xl text-[#E6E1DA]/95 font-light leading-relaxed max-w-2xl mx-auto">
             A single session can open a door. But the deepest shifts I have seen come from staying with the work — days, not hours. That is why retreats are the heart of what I do.
           </p>
-          <p className="font-body text-sm font-semibold tracking-wide text-[#322C2B] uppercase">
+          <p className="font-body text-xs font-semibold tracking-[0.2em] text-[#D9A38A] uppercase">
             There are two ways to go on this journey with me:
           </p>
-        </section>
-      </ScrollReveal>
+        </div>
+      </FullscreenHero>
 
       {/* Containers split - Alternating Layout, NOT a simple card grid */}
       <section className="py-20 bg-white border-y border-[#F2ECE3] space-y-24 md:space-y-36">

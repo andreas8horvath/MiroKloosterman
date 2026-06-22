@@ -8,6 +8,7 @@ import { motion } from 'motion/react';
 import DiscoveryModal from '@/components/DiscoveryModal';
 import CallToActionSection from '@/components/CallToActionSection';
 import ScrollReveal from '@/components/ScrollReveal';
+import FullscreenHero from '@/components/FullscreenHero';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -35,95 +36,68 @@ export default function HomePage() {
   return (
     <div className="relative overflow-hidden">
       
-      {/* 1. HERO SECTION */}
-      <section className="relative min-h-[90vh] flex items-center justify-center py-20 bg-gradient-to-b from-[#FBF8F3] to-[#F7F0E6] overflow-hidden">
-        {/* Soft amber radial sunset glow */}
-        <div id="hero-glow" className="absolute top-[10%] right-[-10%] w-[80vw] h-[80vw] max-w-[800px] bg-gradient-radial from-[#C8852E]/12 to-transparent rounded-full blur-[100px] pointer-events-none" />
-        <div className="absolute bottom-[5%] left-[-10%] w-[600px] h-[600px] bg-gradient-radial from-[#D9A38A]/10 to-transparent rounded-full blur-[100px] pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
-          <motion.div 
-            className="lg:col-span-7 space-y-6 text-left"
-            initial="hidden"
-            animate="visible"
-            variants={containerVariants}
+      {/* 1. HERO SECTION (True Fullscreen with optimized video background) */}
+      <FullscreenHero
+        backgroundImage="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=2000"
+        videoSrc="https://assets.mixkit.co/videos/preview/mixkit-slow-motion-of-water-ripples-34283-large.mp4"
+        overlayOpacity={0.45}
+      >
+        <motion.div 
+          className="max-w-4xl mx-auto space-y-8"
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+        >
+          <motion.span 
+            variants={itemVariants}
+            className="font-body text-xs font-semibold tracking-[0.35em] uppercase text-[#D9A38A] block"
           >
-            <motion.span 
-              variants={itemVariants}
-              className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#C8852E] block"
-            >
-              Body - Mind - Soul
-            </motion.span>
-            
-            <motion.h1 
-              variants={itemVariants}
-              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#322C2B] leading-[1.08] tracking-tight"
-            >
-              Some part of you already <span className="font-display italic text-[#C8852E]">knows</span> it&apos;s time to come home to yourself.
-            </motion.h1>
-            
-            <motion.h2 
-              variants={itemVariants}
-              className="font-body text-lg md:text-2xl font-light text-[#6E655E] tracking-wide"
-            >
-              Come home to yourself. <span className="font-semibold text-[#322C2B]">Feel alive again.</span>
-            </motion.h2>
+            Body - Mind - Soul
+          </motion.span>
+          
+          <motion.h1 
+            variants={itemVariants}
+            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#FBF8F3] leading-[1.12] tracking-tight"
+          >
+            Some part of you already <span className="font-display italic text-[#D9A38A]">knows</span> it&apos;s time to come home to yourself.
+          </motion.h1>
+          
+          <motion.h2 
+            variants={itemVariants}
+            className="font-body text-lg md:text-2xl font-light text-[#E6E1DA] tracking-wide"
+          >
+            Come home to yourself. <span className="font-semibold text-white">Feel alive again.</span>
+          </motion.h2>
 
-            <motion.p 
-              variants={itemVariants}
-              className="font-body text-base text-[#6E655E]/90 leading-relaxed font-light max-w-xl"
-            >
-              Private retreats in Bali. Group retreats around the world. One-on-one healing and coaching, in person or online.
-            </motion.p>
-
-            <motion.div 
-              variants={itemVariants}
-              className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4"
-            >
-              <button
-                onClick={() => setIsBookingOpen(true)}
-                className="bg-[#C8852E] hover:bg-[#9E6418] text-white font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-[2px] tracking-wide text-center cursor-pointer shadow-md hover:shadow-lg hover:brightness-[1.03] inline-flex items-center justify-center gap-2 font-medium"
-              >
-                <Calendar className="w-4.5 h-4.5" />
-                Book a free discovery call
-              </button>
-              
-              <Link
-                href="/retreats"
-                className="border border-[#C8852E]/30 text-[#322C2B] hover:border-[#C8852E] hover:bg-white/40 font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-[2px] tracking-wide text-center inline-flex items-center justify-center gap-2 font-light hover:shadow-sm"
-              >
-                Explore Retreats
-                <ArrowRight className="w-4 h-4 text-[#C8852E]" />
-              </Link>
-            </motion.div>
-          </motion.div>
+          <motion.p 
+            variants={itemVariants}
+            className="font-body text-sm md:text-base text-[#E6E1DA]/80 leading-relaxed font-light max-w-2xl mx-auto"
+          >
+            Private retreats in Bali. Group retreats around the world. One-on-one healing and coaching, in person or online.
+          </motion.p>
 
           <motion.div 
-            className="lg:col-span-5 flex justify-center lg:justify-end"
-            initial={{ opacity: 0, scale: 1.04, y: 0 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.45 }}
+            variants={itemVariants}
+            className="pt-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 max-w-md mx-auto"
           >
-            {/* Elegant Arch Framing over portrait */}
-            <div className="relative w-full max-w-[380px] aspect-[3/4] rounded-t-full border border-[#C8852E]/20 p-3 bg-[#FBF8F3]/50 shadow-xl overflow-hidden group">
-              <div className="absolute inset-0 border border-[#C8852E]/10 rounded-t-full p-2 m-2 pointer-events-none" />
-              <div className="w-full h-full relative rounded-t-full overflow-hidden">
-                <img
-                  src="https://res.cloudinary.com/dt806m3nm/image/upload/c_scale,w_800,f_auto,q_auto/v1776505357/4-1920w.jpg_uiikl9.webp"
-                  alt="Miro Kloosterman - Portrait"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover grayscale-[10%] brightness-[1.02] contrast-[0.98] transition-transform duration-1000 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2C4A47]/40 via-transparent to-transparent" />
-                <div className="absolute bottom-5 left-0 right-0 text-center text-white px-4 leading-tight">
-                  <span className="font-display text-lg italic block text-[#D9A38A]">Miro Kloosterman</span>
-                  <span className="font-body text-[9px] uppercase tracking-widest text-[#FBF8F3]/80 select-none">Bali & Worldwide Guide</span>
-                </div>
-              </div>
-            </div>
+            <button
+              onClick={() => setIsBookingOpen(true)}
+              className="bg-[#C8852E] hover:bg-[#9E6418] text-white font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-[2px] tracking-wide text-center cursor-pointer shadow-lg hover:shadow-[#C8852E]/20 inline-flex items-center justify-center gap-2 font-medium"
+            >
+              <Calendar className="w-4.5 h-4.5" />
+              Book a free discovery call
+            </button>
+            
+            <Link
+              href="/retreats"
+              className="border border-white/30 text-white hover:border-white hover:bg-white/10 font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-[2px] tracking-wide text-center inline-flex items-center justify-center gap-2 font-light hover:shadow-sm"
+            >
+              Explore Retreats
+              <ArrowRight className="w-4 h-4 text-[#D9A38A]" />
+            </Link>
           </motion.div>
-        </div>
-      </section>
+        </motion.div>
+      </FullscreenHero>
 
       {/* 2. THE MIRROR / RECOGNITION */}
       <section className="py-24 bg-[#FBF8F3] relative overflow-hidden">
@@ -193,8 +167,8 @@ export default function HomePage() {
               <div className="relative aspect-[4/5] rounded-t-full border border-[#D9A38A]/30 p-2 overflow-hidden shadow-2xl">
                 <div className="w-full h-full relative rounded-t-full overflow-hidden">
                   <img
-                    src="https://picsum.photos/seed/miro_bali/700/875"
-                    alt="Miro Kloosterman walking by Balinese stream"
+                    src="https://res.cloudinary.com/dt806m3nm/image/upload/c_scale,w_400,f_auto,q_auto/v1776505357/4-1920w.jpg_uiikl9.webp"
+                    alt="Miro Kloosterman"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover grayscale-[15%] brightness-95"
                   />

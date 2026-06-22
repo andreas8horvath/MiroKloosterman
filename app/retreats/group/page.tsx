@@ -7,6 +7,7 @@ import { motion } from 'motion/react';
 import DiscoveryModal from '@/components/DiscoveryModal';
 import CallToActionSection from '@/components/CallToActionSection';
 import ScrollReveal from '@/components/ScrollReveal';
+import FullscreenHero from '@/components/FullscreenHero';
 
 export default function GroupRetreatPage() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -24,20 +25,23 @@ export default function GroupRetreatPage() {
   return (
     <div className="bg-[#FBF8F3] overflow-hidden">
       
-      {/* Editorial Header */}
-      <ScrollReveal variant="up" duration={0.8}>
-        <section className="py-16 md:py-24 max-w-5xl mx-auto px-6 text-center space-y-6 md:space-y-8">
-          <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
+      {/* Editorial Header (True Fullscreen) */}
+      <FullscreenHero
+        backgroundImage="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=2000"
+        overlayOpacity={0.5}
+      >
+        <div className="max-w-4xl mx-auto space-y-6">
+          <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#D9A38A] block">
             Shared Alchemy
           </span>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#322C2B] leading-[1.1] tracking-tight">
-            Group retreats for your body, mind, and soul. <span className="font-display italic text-[#C8852E]">In Bali & worldwide.</span>
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#FBF8F3] leading-[1.12] tracking-tight">
+            Group retreats for your body, mind, and soul. <span className="font-display italic text-[#D9A38A]">In Bali & worldwide.</span>
           </h1>
-          <p className="font-body text-lg md:text-2xl text-[#6E655E] max-w-3xl mx-auto font-light leading-relaxed">
+          <p className="font-body text-base sm:text-lg md:text-2xl text-[#E6E1DA]/95 max-w-3xl mx-auto font-light leading-relaxed">
             Awaken your true self, in the company of others walking the same way.
           </p>
-        </section>
-      </ScrollReveal>
+        </div>
+      </FullscreenHero>
 
       {/* Philosophy of Communion */}
       <section className="py-16 bg-white border-y border-[#F2ECE3]">

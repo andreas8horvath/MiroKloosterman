@@ -6,6 +6,7 @@ import { Award, Compass, Heart, Shield, Sparkles, BookOpen } from 'lucide-react'
 import { motion } from 'motion/react';
 import CallToActionSection from '@/components/CallToActionSection';
 import ScrollReveal from '@/components/ScrollReveal';
+import FullscreenHero from '@/components/FullscreenHero';
 
 export default function AboutPage() {
   const credentials = [
@@ -44,20 +45,23 @@ export default function AboutPage() {
   return (
     <div className="bg-[#FBF8F3]">
       
-      {/* Editorial Header */}
-      <section className="py-16 md:py-24 max-w-5xl mx-auto px-6 text-center space-y-6 md:space-y-8 overflow-hidden">
-        <ScrollReveal variant="up" duration={0.8}>
-          <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#C8852E] block">
+      {/* Editorial Header (True Fullscreen) */}
+      <FullscreenHero
+        backgroundImage="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=2000"
+        overlayOpacity={0.5}
+      >
+        <div className="max-w-4xl mx-auto space-y-6">
+          <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#D9A38A] block">
             Behind the Practice
           </span>
-          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight max-w-4xl mx-auto mt-4">
-            My work is simple to say and takes a lifetime to live: <span className="font-display italic text-[#C8852E]">supporting coming home to yourself,</span> and feel alive again.
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FBF8F3] leading-[1.12] tracking-tight max-w-4xl mx-auto mt-4">
+            My work is simple to say and takes a lifetime to live: <span className="font-display italic text-[#D9A38A]">supporting coming home to yourself,</span> and feel alive again.
           </h1>
-          <p className="font-body text-lg md:text-xl text-[#6E655E] max-w-3xl mx-auto font-light leading-relaxed mt-4">
+          <p className="font-body text-base sm:text-lg md:text-xl text-[#E6E1DA]/95 max-w-2xl mx-auto font-light leading-relaxed mt-4">
             I am Miro Kloosterman. I guide people back to their health, their energy, and the version of themselves that has been waiting patiently underneath everything life piled on top.
           </p>
-        </ScrollReveal>
-      </section>
+        </div>
+      </FullscreenHero>
 
       {/* Backstory: Backlit Portrait & Two Column Bio */}
       <section className="py-16 bg-[#F2ECE3]/30 border-y border-[#F2ECE3] overflow-hidden">
