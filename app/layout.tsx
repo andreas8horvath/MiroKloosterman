@@ -29,21 +29,46 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
-                window.addEventListener('error', function(e) {
-                  var isChunkError = e && e.message && (
-                    e.message.indexOf('ChunkLoadError') > -1 || 
-                    e.message.indexOf('Loading chunk') > -1 || 
-                    e.message.indexOf('Loading CSS chunk') > -1
-                  );
-                  var isScriptLoadError = e && e.target && e.target.tagName === 'SCRIPT' && e.target.src && e.target.src.indexOf('/_next/static/') > -1;
-                  
-                  if (isChunkError || isScriptLoadError) {
-                    console.warn('Next.js chunk load failed. Reloading window to fetch latest assets...', e);
+                function forceReload() {
+                  try {
+                    var now = Date.now();
+                    var lastReload = sessionStorage.getItem('last_chunk_reload');
+                    if (!lastReload || now - parseInt(lastReload, 10) > 15000) {
+                      sessionStorage.setItem('last_chunk_reload', now.toString());
+                      console.warn('Chunk loading error detected. Refreshing to load latest version...');
+                      window.location.reload();
+                    } else {
+                      console.error('Repeated chunk loading error. Skipping reload to avoid loop.');
+                    }
+                  } catch (e) {
                     window.location.reload();
                   }
+                }
+
+                // Catch script loading network errors (during capture phase)
+                window.addEventListener('error', function(e) {
+                  var target = e.target;
+                  if (target && target.tagName === 'SCRIPT') {
+                    var src = target.src || '';
+                    if (src.indexOf('_next/static') !== -1 || src.indexOf('chunk') !== -1) {
+                      forceReload();
+                    }
+                  }
                 }, true);
+
+                // Catch runtime chunk load errors (Webpack/Turbopack chunk errors)
+                window.addEventListener('unhandledrejection', function(e) {
+                  var reason = e.reason;
+                  if (reason) {
+                    var msg = reason.message || '';
+                    var name = reason.name || '';
+                    if (name === 'ChunkLoadError' || msg.indexOf('ChunkLoadError') !== -1 || msg.indexOf('Loading chunk') !== -1) {
+                      forceReload();
+                    }
+                  }
+                });
               })();
-            `,
+            `
           }}
         />
       </head>
