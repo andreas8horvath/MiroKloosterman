@@ -212,10 +212,10 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#C8852E] text-white hover:bg-[#9E6418] disabled:bg-[#C8852E]/50 disabled:cursor-not-allowed font-body text-sm py-4 rounded-full transition-all tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer mt-4"
+                    className="w-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white disabled:bg-[#D9A38A]/50 disabled:text-[#1E1918]/50 disabled:cursor-not-allowed font-body text-sm py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer mt-4"
                   >
                     {isSubmitting ? (
-                      <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      <span className="w-5 h-5 border-2 border-[#1E1918] border-t-transparent rounded-full animate-spin" />
                     ) : (
                       <>
                         <Send className="w-4 h-4" />
@@ -251,7 +251,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
 
                   <button
                     onClick={handleReset}
-                    className="border border-[#C8852E] text-[#C8852E] hover:bg-[#C8852E] hover:text-white px-8 py-3 rounded-full transition-all text-sm font-medium mt-4 cursor-pointer"
+                    className="border border-[#D9A38A]/40 text-[#D9A38A] hover:bg-[#D9A38A] hover:text-[#1E1918] px-8 py-3 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 text-sm font-medium mt-4 cursor-pointer"
                   >
                     Close Window
                   </button>

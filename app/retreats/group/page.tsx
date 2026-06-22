@@ -65,7 +65,7 @@ export default function GroupRetreatPage() {
               <div className="pt-4">
                 <button
                   onClick={() => setIsBookingOpen(true)}
-                  className="bg-[#C8852E] hover:bg-[#9E6418] text-white font-body text-sm px-8 py-3.5 rounded-full transition-all tracking-wide inline-flex items-center gap-2 cursor-pointer font-medium"
+                  className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white font-body text-sm px-8 py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide inline-flex items-center gap-2 cursor-pointer font-medium shadow-sm hover:shadow-md"
                 >
                   Inquire about upcoming dates 
                   <Calendar className="w-4.5 h-4.5" />

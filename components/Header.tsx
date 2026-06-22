@@ -155,11 +155,7 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
         <div className="hidden lg:flex items-center space-x-4">
           <button
             onClick={onOpenBooking}
-            className={`font-body text-sm px-6 py-2.5 rounded-full transition-all tracking-wide shadow-sm hover:shadow-md cursor-pointer inline-flex items-center gap-2 ${
-              showSolidHeader 
-                ? 'bg-[#C8852E] text-white hover:bg-[#9E6418]' 
-                : 'bg-[#D9A38A] text-[#1E1918] hover:bg-[#FBF8F3] hover:text-[#322C2B]'
-            }`}
+            className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white font-body text-sm px-6 py-2.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide shadow-sm hover:shadow-md cursor-pointer inline-flex items-center gap-2 font-medium"
           >
             <Calendar className="w-4 h-4" />
             Book a free discovery call
@@ -256,7 +252,7 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
                   setIsMobileMenuOpen(false);
                   onOpenBooking();
                 }}
-                className="w-full bg-[#C8852E] text-white hover:bg-[#9E6418] text-center font-medium font-body py-3.5 rounded-full transition-all tracking-wide mt-2 shadow-sm inline-flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white text-center font-medium font-body py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide mt-2 shadow-sm inline-flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Calendar className="w-4 h-4" />
                 Book a free discovery call

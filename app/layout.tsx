@@ -24,6 +24,29 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en" className={`${cormorant.variable} ${outfit.variable} scroll-smooth`}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                window.addEventListener('error', function(e) {
+                  var isChunkError = e && e.message && (
+                    e.message.indexOf('ChunkLoadError') > -1 || 
+                    e.message.indexOf('Loading chunk') > -1 || 
+                    e.message.indexOf('Loading CSS chunk') > -1
+                  );
+                  var isScriptLoadError = e && e.target && e.target.tagName === 'SCRIPT' && e.target.src && e.target.src.indexOf('/_next/static/') > -1;
+                  
+                  if (isChunkError || isScriptLoadError) {
+                    console.warn('Next.js chunk load failed. Reloading window to fetch latest assets...', e);
+                    window.location.reload();
+                  }
+                }, true);
+              })();
+            `,
+          }}
+        />
+      </head>
       <body suppressHydrationWarning className="bg-[#FBF8F3] text-[#322C2B] font-body antialiased min-h-screen flex flex-col">
         <LayoutWrapper>
           {children}

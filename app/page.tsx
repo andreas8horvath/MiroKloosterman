@@ -59,7 +59,7 @@ export default function HomePage() {
             variants={itemVariants}
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-[#FBF8F3] leading-[1.12] tracking-tight"
           >
-            Some part of you already <span className="font-display italic text-[#D9A38A]">knows</span> it&apos;s time to come home to yourself.
+            Some part of you already <span className="font-display italic text-[#D9A38A]">knows</span> it&apos;s time to come home to <span className="font-display italic text-[#D9A38A]">yourself.</span>
           </motion.h1>
           
           <motion.h2 
@@ -78,11 +78,11 @@ export default function HomePage() {
 
           <motion.div 
             variants={itemVariants}
-            className="pt-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 max-w-md mx-auto"
+            className="pt-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 max-w-lg md:max-w-2xl mx-auto"
           >
             <button
               onClick={() => setIsBookingOpen(true)}
-              className="bg-[#C8852E] hover:bg-[#9E6418] text-white font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-[2px] tracking-wide text-center cursor-pointer shadow-lg hover:shadow-[#C8852E]/20 inline-flex items-center justify-center gap-2 font-medium"
+              className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide text-center cursor-pointer shadow-lg hover:shadow-[#C8852E]/10 inline-flex items-center justify-center gap-2 font-medium whitespace-nowrap"
             >
               <Calendar className="w-4.5 h-4.5" />
               Book a free discovery call
@@ -90,10 +90,10 @@ export default function HomePage() {
             
             <Link
               href="/retreats"
-              className="border border-white/30 text-white hover:border-white hover:bg-white/10 font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-[2px] tracking-wide text-center inline-flex items-center justify-center gap-2 font-light hover:shadow-sm"
+              className="border border-[#D9A38A]/40 text-[#D9A38A] hover:bg-[#D9A38A] hover:text-[#1E1918] font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide text-center inline-flex items-center justify-center gap-2 font-light hover:shadow-sm whitespace-nowrap"
             >
               Explore Retreats
-              <ArrowRight className="w-4 h-4 text-[#D9A38A]" />
+              <ArrowRight className="w-4 h-4 text-current" />
             </Link>
           </motion.div>
         </motion.div>
@@ -204,7 +204,7 @@ export default function HomePage() {
               <div className="pt-4">
                 <Link
                   href="/about"
-                  className="bg-[#D9A38A] hover:bg-[#C8852E] text-[#2C4A47] hover:text-white font-body text-sm px-8 py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-[2px] tracking-wide inline-flex items-center gap-2 font-medium hover:shadow-md"
+                  className="bg-[#D9A38A] hover:bg-[#C8852E] text-[#1E1918] hover:text-white font-body text-sm px-8 py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide inline-flex items-center gap-2 font-medium hover:shadow-md"
                 >
                   Read my full story 
                   <ArrowRight className="w-4 h-4" />

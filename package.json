@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
+    "postbuild": "node copy-static.js",
     "start": "next start",
     "lint": "eslint .",
     "clean": "next clean"
