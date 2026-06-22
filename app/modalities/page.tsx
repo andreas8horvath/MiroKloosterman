@@ -30,7 +30,7 @@ const modalitiesList = [
   },
   {
     slug: 'water-therapy',
-    title: 'Harmonic Flow Aquatic Arts',
+    title: 'Harmonic Flow Aquatic Healing Arts',
     excerpt: 'Surrender completely, held with care by the oldest and gentlest element of all. Surface float meditation and brief, safe submersions developed under Damla Yaku.',
     icon: Waves,
     detailLink: '/modalities/water-therapy'

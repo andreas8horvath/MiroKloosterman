@@ -20,6 +20,7 @@ import {
   Check,
   Send
 } from 'lucide-react';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 import DiscoveryModal from '@/components/DiscoveryModal';
 import ScrollReveal from '@/components/ScrollReveal';
 
@@ -467,7 +468,7 @@ export default function BioPage() {
               rel="noopener noreferrer" 
               className="flex items-center gap-1.5 text-xs text-[#322C2B] hover:text-[#C8852E] transition-colors"
             >
-              <Phone className="w-3.5 h-3.5 text-[#C8852E]" />
+              <WhatsAppIcon className="w-3.5 h-3.5 text-[#C8852E]" />
               <span>+31 6 8140 0180</span>
             </a>
           </div>

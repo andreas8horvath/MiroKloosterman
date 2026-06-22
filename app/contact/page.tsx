@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Mail, Phone, Instagram, Send, CheckCircle, Clock, Calendar, HelpCircle, User } from 'lucide-react';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export default function ContactPage() {
@@ -99,7 +100,7 @@ export default function ContactPage() {
                 {/* WhatsApp */}
                 <li className="flex items-start space-x-4 border-b border-[#F2ECE3] pb-4">
                   <div className="p-3 bg-[#C8852E]/10 rounded-full text-[#C8852E] shrink-0">
-                    <Phone className="w-5 h-5" />
+                    <WhatsAppIcon className="w-5 h-5" />
                   </div>
                   <div className="space-y-1">
                     <span className="text-xs uppercase tracking-wider text-[#6E655E] block font-semibold">WhatsApp Direct</span>

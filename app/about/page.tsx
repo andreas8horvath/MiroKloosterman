@@ -51,7 +51,7 @@ export default function AboutPage() {
             Behind the Practice
           </span>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#322C2B] leading-tight max-w-4xl mx-auto mt-4">
-            My work is simple to say and takes a lifetime to live: <span className="font-display italic text-[#C8852E]">helping you come home to yourself,</span> and feel alive again.
+            My work is simple to say and takes a lifetime to live: <span className="font-display italic text-[#C8852E]">supporting coming home to yourself,</span> and feel alive again.
           </h1>
           <p className="font-body text-lg md:text-xl text-[#6E655E] max-w-3xl mx-auto font-light leading-relaxed mt-4">
             I am Miro Kloosterman. I guide people back to their health, their energy, and the version of themselves that has been waiting patiently underneath everything life piled on top.

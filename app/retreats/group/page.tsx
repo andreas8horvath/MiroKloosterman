@@ -13,11 +13,12 @@ export default function GroupRetreatPage() {
   
   const programOfferings = [
     { title: 'Breathwork Journeys', desc: 'Somatic journeying utilizing hyper-oxygenation to release emotional tissue blockages.' },
-    { title: 'Harmonic Flow Aquatic Healing', desc: 'Water therapy surrendering in warm pools, shifting nervous systems to restorative womb-like layers.' },
+    { title: 'Harmonic Flow Aquatic Healing Arts', desc: 'Water therapy surrendering in warm pools, shifting nervous systems to restorative womb-like layers.' },
     { title: 'Voice Activation & Singing Circles', desc: 'Awakening expression frequencies, collective singing therapy, and throat chakra release.' },
     { title: 'Somatic Body & Energy Practices', desc: 'Reiki, meridian balancing, alignment therapies, and fluid chi movement.' },
-    { title: 'Ecstatic Dance & Native Sound Healing', desc: 'Rhythmic, judgment-free movement meditation accompanied by organic bowls and vibrations.' },
-    { title: 'The Art of Expression', desc: 'Creative workshops, writing circles, and shared presence containers.' }
+    { title: 'Ecstatic Dance & Sound Healing', desc: 'Rhythmic, judgment-free movement meditation accompanied by organic bowls and vibrations.' },
+    { title: 'The Art of Expression', desc: 'Creative arts, journaling, acting, sharing circle.' },
+    { title: 'Manifestation & Mindset Practice', desc: 'Aligning vision, belief design, and conscious habit integration.' }
   ];
 
   return (

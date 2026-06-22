@@ -12,12 +12,12 @@ export default function WaterTherapyPage() {
       desc: 'Supported securely by specialized neck and knee floats and a warm water pillow. Your breathing and nervous system slow down into a deeply meditative, floating, and restful state — often accompanied by sound therapy and slow rotational movement.'
     },
     {
-      title: 'Phase II — Under the Surface',
+      title: 'Phase II — Under the Water',
       desc: 'For short, completely safe, and held moments. With prior agreement and nose clips, we transition the body beneath the warm water. Your mind drops into something close to the primordial storage memory of the womb — a profound, calm space for deep emotional release.'
     },
     {
-      title: 'Phase III — Grounding & Rebirth',
-      desc: 'Gently and slowly, you are returned back to the surface. Supported in Miro&apos;s arms until you are fully checked back into your physical skin. You leave the water feeling incredibly light, empty, safe, and clean.'
+      title: 'Phase III — Grounding',
+      desc: "Gently and slowly, you are returned back to the ground. Supported and guided by Miro until you are fully checked back into your physical skin. You leave the water feeling incredibly light, empty, safe, and clean."
     }
   ];
 

@@ -27,7 +27,7 @@ const modalitiesDropdown = [
   { href: '/modalities/breathwork', label: 'Breathwork', desc: 'Transformative breathing' },
   { href: '/modalities/body-reset', label: 'Body Reset', desc: 'Whole-system structural realignment' },
   { href: '/modalities/massages', label: 'Massages', desc: 'Chi Core Release & Intuitive Massage' },
-  { href: '/modalities/water-therapy', label: 'Water Therapy', desc: 'Harmonic Flow Aquatic Arts' },
+  { href: '/modalities/water-therapy', label: 'Water Therapy', desc: 'Harmonic Flow Aquatic Healing Arts' },
   { href: '/modalities/hypnotherapy', label: 'Hypnotherapy', desc: 'Subconscious pattern shifting' },
   { href: '/modalities/coaching', label: 'Coaching', desc: 'Direct health & lifestyle mentoring' },
 ];

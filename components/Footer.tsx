@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Mail, Phone, Instagram, Send, ArrowUp } from 'lucide-react';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 export default function Footer({ onOpenBooking }: { onOpenBooking: () => void }) {
   const handleScrollToTop = () => {
@@ -72,7 +73,7 @@ export default function Footer({ onOpenBooking }: { onOpenBooking: () => void })
                 <Link href="/modalities/massages" className="hover:text-[#D9A38A] transition-colors">Chi Core & Massages</Link>
               </li>
               <li>
-                <Link href="/modalities/water-therapy" className="hover:text-[#D9A38A] transition-colors">Harmonic Flow Water Healing</Link>
+                <Link href="/modalities/water-therapy" className="hover:text-[#D9A38A] transition-colors">Harmonic Flow Aquatic Healing Arts</Link>
               </li>
               <li>
                 <Link href="/modalities/hypnotherapy" className="hover:text-[#D9A38A] transition-colors">Hypnotherapy</Link>
@@ -96,7 +97,7 @@ export default function Footer({ onOpenBooking }: { onOpenBooking: () => void })
                 </a>
               </li>
               <li className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-[#D9A38A] shrink-0" />
+                <WhatsAppIcon className="w-4 h-4 text-[#D9A38A] shrink-0" />
                 <a href="https://wa.me/31681400180" target="_blank" rel="noopener noreferrer" className="hover:text-[#D9A38A] transition-colors">
                   +31 6 8140 0180
                 </a>
