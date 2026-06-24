@@ -155,9 +155,9 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
         <div className="hidden lg:flex items-center space-x-4">
           <button
             onClick={onOpenBooking}
-            className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] font-body text-sm px-6 py-2.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide shadow-sm hover:shadow-md cursor-pointer inline-flex items-center gap-2 font-medium"
+            className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide shadow-lg hover:shadow-[#C08264]/10 cursor-pointer inline-flex items-center gap-2 font-medium whitespace-nowrap"
           >
-            <Calendar className="w-4 h-4" />
+            <Calendar className="w-4.5 h-4.5" />
             Book a free discovery call
           </button>
         </div>
@@ -252,9 +252,9 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
                   setIsMobileMenuOpen(false);
                   onOpenBooking();
                 }}
-                className="w-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] text-center font-medium font-body py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide mt-2 shadow-sm inline-flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] text-center font-medium font-body py-4 px-8 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide mt-2 shadow-lg hover:shadow-[#C08264]/10 inline-flex items-center justify-center gap-2 cursor-pointer"
               >
-                <Calendar className="w-4 h-4" />
+                <Calendar className="w-4.5 h-4.5" />
                 Book a free discovery call
               </button>
             </div>
