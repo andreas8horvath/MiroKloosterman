@@ -10,12 +10,12 @@ import FullscreenHero from '@/components/FullscreenHero';
 
 export default function AboutPage() {
   const credentials = [
-    'Certified Life Coach & Mentorship Practitioner',
-    'Breathwork Facilitator & Breath Mechanic',
-    'Certified Hypnotherapist',
-    'Whole Body Reset Therapist',
-    'Chi Core Release (Chi Nei Tsang) Massage Specialist',
-    'Traditional Reiki Master & Energy Guide',
+    'Life Coach & Mentorship Practitioner',
+    'Breathwork Facilitator',
+    'Hypnotherapist',
+    'Body Reset Therapist',
+    'Chi Core Release (Chi Nei Tsang) Massage',
+    'Reiki Master',
     'Trained in Harmonic Flow Aquatic Healing Arts'
   ];
 
@@ -55,7 +55,7 @@ export default function AboutPage() {
             Behind the Practice
           </span>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FBF8F3] leading-[1.12] tracking-tight max-w-4xl mx-auto mt-4">
-            My work is simple to say and takes a lifetime to live: <span className="font-display italic text-[#D9A38A]">supporting coming home to yourself,</span> and feel alive again.
+            My work is simple to say and takes a lifetime to live: <span className="font-display italic text-[#D9A38A]">supporting you coming home to yourself,</span> and feel alive again.
           </h1>
           <p className="font-body text-base sm:text-lg md:text-xl text-[#E6E1DA]/95 max-w-2xl mx-auto font-light leading-relaxed mt-4">
             I am Miro Kloosterman. I guide people back to their health, their energy, and the version of themselves that has been waiting patiently underneath everything life piled on top.
@@ -70,11 +70,11 @@ export default function AboutPage() {
           <div className="lg:col-span-5 flex justify-center">
             {/* Elegant Arch Frame */}
             <ScrollReveal variant="right" duration={0.9}>
-              <div className="relative w-full max-w-[340px] aspect-[3/4] rounded-t-full border border-[#C8852E]/20 p-2.5 bg-white shadow-xl overflow-hidden group">
+              <div className="relative w-full max-w-[340px] aspect-[3/4] rounded-t-full border border-[#D9A38A]/25 p-2.5 bg-white shadow-xl overflow-hidden group">
                 <div className="w-full h-full relative rounded-t-full overflow-hidden">
                   <img
                     src="https://picsum.photos/seed/miro_about/700/930"
-                    alt="Miro Kloosterman in Ubud, Bali"
+                    alt="Miro Kloosterman in Bali"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover grayscale-[5%] brightness-95 transition-transform duration-1000 group-hover:scale-105"
                   />
@@ -100,7 +100,7 @@ export default function AboutPage() {
                   I healed it naturally. No antibiotics — herbs, diet, breath, movement, and the right support at the right moments. I built my own protocol out of necessity, and it worked. Along the way I came to understand the human experience from the inside: loss, illness, addiction, fear, and the long climb back toward feeling alive.
                 </p>
                 <p>
-                  That climb is what I do now. I stopped acting and turned fully toward this — because walking beside someone on their way back to themselves means more to me than anything I could ever perform.
+                  That climb is what I do now. Before this, I worked as a professional actor—a creative path born from a deep passion and a love for exploring the human experience. Even though acting has always been a great dream and something I still hold with immense gratitude, my journey guided me toward a different, more grounding calling. I transitioned fully toward healing because walking beside someone on their way back to themselves means more to me than any role I could ever perform.
                 </p>
               </div>
             </ScrollReveal>
@@ -134,7 +134,7 @@ export default function AboutPage() {
               <div 
                 className="bg-white border border-[#F2ECE3] shadow-md hover:shadow-xl hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-[#322C2B]/5 rounded-xl p-8 space-y-4 transition-all duration-300 ease-out flex flex-col justify-start w-full cursor-pointer"
               >
-                <div className="w-8 h-8 rounded-full bg-[#C8852E]/10 flex items-center justify-center text-[#C8852E] font-mono text-xs shrink-0">
+                <div className="w-8 h-8 rounded-full bg-[#D9A38A]/10 flex items-center justify-center text-[#C08264] font-mono text-xs shrink-0">
                   0{idx + 1}
                 </div>
                 <h4 className="font-display text-xl text-[#322C2B] tracking-wide font-light border-b border-[#F2ECE3] pb-2">
@@ -173,7 +173,7 @@ export default function AboutPage() {
       <section className="py-24 max-w-4xl mx-auto px-6 space-y-12 overflow-hidden">
         <ScrollReveal variant="up" duration={0.8}>
           <div className="text-center space-y-3">
-            <Award className="w-8 h-8 text-[#C8852E] mx-auto opacity-80" />
+            <Award className="w-8 h-8 text-[#C08264] mx-auto opacity-80" />
             <h2 className="font-display text-3xl md:text-4xl text-[#322C2B] font-light mt-2">
               My Background & Training
             </h2>
@@ -186,9 +186,9 @@ export default function AboutPage() {
         <ScrollReveal variant="up" duration={0.85} delay={0.15}>
           <div className="bg-white border border-[#F2ECE3] rounded-2xl p-6 md:p-10 shadow-lg shadow-[#322C2B]/5 divide-y divide-[#F2ECE3]/60 font-body text-sm text-[#322C2B] font-light">
             {credentials.map((cred, idx) => (
-              <div key={idx} className="py-4 md:py-5 flex items-center justify-between first:pt-0 last:pb-0">
+              <div key={idx} className="py-4 md:py-5 flex items-center gap-3 first:pt-0 last:pb-0">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#D9A38A]/60 shrink-0" />
                 <span className="font-medium text-[#322C2B]">{cred}</span>
-                <span className="text-xs text-[#C8852E] font-medium uppercase tracking-widest pl-4 shrink-0">Verified</span>
               </div>
             ))}
           </div>

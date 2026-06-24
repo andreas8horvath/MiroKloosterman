@@ -10,12 +10,12 @@ import FullscreenHero from '@/components/FullscreenHero';
 export default function PrivateRetreatPage() {
   const customPractices = [
     'Health and lifestyle coaching and mentoring',
-    'Customized detox and nutrition blueprints',
-    'Body movement, workout guidance, and therapeutic yoga',
+    'Customized detox and nutrition support',
+    'morning practice Body movements, workouts, and Yoga',
     'Deep Transformative Breathwork sessions',
-    'Whole Body Reset structural therapy',
+    'Body Reset therapy',
     'Chi Core Release (belly-organ) massage',
-    'Sensory Intuitive massage therapy',
+    'Intuitive massage therapy',
     'Harmonic Flow Water therapy',
     'Deep subconscious Hypnotherapy integration',
     'Reconnecting with your inner child, adventure, and play'
@@ -60,7 +60,7 @@ export default function PrivateRetreatPage() {
                   We do not start when you land and stop when you leave. The support begins weeks before you arrive in Bali and continues for a month afterward, or for as long as you need to anchor the shifts. This is how real, lasting change happens — not during an isolated weekend, but across a full somatic process you actually live through.
                 </p>
                 <p>
-                  A private retreat runs a week, ten days, or longer. Long enough to make a genuine, structural difference. Together we shape your days from the practices that serve your physical and energetic systems.
+                  A private retreat runs ten days, two weeks, or longer. Long enough to make a genuine, structural difference. Together we shape your days from the practices that serve your physical and energetic systems.
                 </p>
               </div>
             </ScrollReveal>
@@ -77,7 +77,7 @@ export default function PrivateRetreatPage() {
                   className="w-full h-full object-cover grayscale-[8%] brightness-95 transition-transform duration-1000 group-hover:scale-105"
                 />
                 <div className="absolute top-4 left-4 bg-white/95 px-4 py-1.5 rounded-full text-xs font-body font-medium text-[#322C2B] shadow">
-                  🌴 Ubud Jungle Sanctuary
+                  🌴 Bali Jungle Sanctuary
                 </div>
               </div>
             </ScrollReveal>
@@ -106,9 +106,9 @@ export default function PrivateRetreatPage() {
           {customPractices.map((practice, idx) => (
             <ScrollReveal key={idx} variant="up" duration={0.8} delay={idx * 0.05}>
               <div 
-                className="flex items-start gap-3.5 p-4 bg-white border border-[#F2ECE3] rounded-xl shadow-sm hover:border-[#C8852E]/30 transition-all h-full"
+                className="flex items-start gap-3.5 p-4 bg-white border border-[#F2ECE3] rounded-xl shadow-sm hover:border-[#C08264]/30 transition-all h-full"
               >
-                <Check className="w-5 h-5 text-[#C8852E] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#C08264] shrink-0 mt-0.5" />
                 <span className="font-body text-sm md:text-base text-[#322C2B] font-light">{practice}</span>
               </div>
             </ScrollReveal>
@@ -145,7 +145,7 @@ export default function PrivateRetreatPage() {
               Transformation Journals
             </span>
             <h2 className="font-display text-3xl md:text-4xl text-[#322C2B] font-light mt-2">
-              Shared experiences from Ubud
+              Shared experiences from Bali
             </h2>
           </ScrollReveal>
         </div>
@@ -183,7 +183,7 @@ export default function PrivateRetreatPage() {
         <ScrollReveal variant="up" duration={0.8}>
           <div className="text-center font-body text-sm text-[#6E655E] max-w-sm mx-auto leading-relaxed pt-4 border-t border-[#F2ECE3]/60 font-light">
             <span className="font-semibold text-[#322C2B] block mb-1">Strict Structural Constraint</span>
-            Spaces are genuinely limited — a private retreat takes all of my energy, focus, and time, so I only guide a few clients in Ubud at once.
+            Spaces are genuinely limited — a private retreat is reserved for only 1 person (or a couple retreat for up to 2 partners) at any given time, as it takes all of my energy, focus, and care.
           </div>
         </ScrollReveal>
       </section>

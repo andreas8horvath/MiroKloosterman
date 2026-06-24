@@ -139,17 +139,17 @@ export default function BioPage() {
   };
 
   return (
-    <div id="bio-container" className="min-h-screen bg-[#FBF8F3] text-[#322C2B] flex flex-col items-center px-4 py-12 md:py-16 selection:bg-[#C8852E]/10 select-none">
+    <div id="bio-container" className="min-h-screen bg-[#FBF8F3] text-[#322C2B] flex flex-col items-center px-4 py-12 md:py-16 selection:bg-[#D9A38A]/20 select-none">
       
       {/* Soft natural light background glow */}
-      <div className="absolute top-0 inset-x-0 h-96 bg-gradient-to-b from-[#C8852E]/10 to-transparent pointer-events-none blur-3xl" />
+      <div className="absolute top-0 inset-x-0 h-96 bg-gradient-to-b from-[#D9A38A]/10 to-transparent pointer-events-none blur-3xl" />
       
       <div className="w-full max-w-md flex flex-col items-center relative z-10 overflow-hidden">
         
         {/* Profile Header */}
         <ScrollReveal variant="up" duration={0.8}>
           <div id="bio-profile" className="flex flex-col items-center text-center mb-8">
-            <div className="relative w-36 h-36 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-tr from-[#C8852E]/20 to-[#D9A38A]/40 mb-4 shadow-sm mx-auto">
+            <div className="relative w-36 h-36 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-tr from-[#C08264]/20 to-[#D9A38A]/40 mb-4 shadow-sm mx-auto">
               <div className="w-full h-full rounded-full overflow-hidden border border-white relative bg-[#F2ECE3]">
                 <img 
                   src="https://res.cloudinary.com/dt806m3nm/image/upload/c_scale,w_400,f_auto,q_auto/v1776505357/4-1920w.jpg_uiikl9.webp" 
@@ -164,7 +164,7 @@ export default function BioPage() {
               Miro Kloosterman
             </h1>
             
-            <p className="font-body text-xs text-[#C8852E] font-medium tracking-widest uppercase mt-1">
+            <p className="font-body text-xs text-[#C08264] font-medium tracking-widest uppercase mt-1">
               Healer &middot; Coach &middot; Retreat Guide
             </p>
             
@@ -190,7 +190,7 @@ export default function BioPage() {
                 className="w-full p-4 md:p-5 flex items-center justify-between transition-colors hover:bg-[#FBF8F3] text-left"
               >
                 <div className="flex items-center gap-3.5">
-                  <div className="w-10 h-10 rounded-full bg-[#C8852E]/10 flex items-center justify-center text-[#C8852E] shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-[#D9A38A]/15 flex items-center justify-center text-[#C08264] shrink-0">
                     <Sparkles className="w-5 h-5" />
                   </div>
                   <div>
@@ -231,7 +231,7 @@ export default function BioPage() {
                               placeholder="Your first name"
                               value={name}
                               onChange={(e) => setName(e.target.value)}
-                              className="w-full bg-white border border-[#F2ECE3] rounded-lg px-3.5 py-2.5 text-xs text-[#322C2B] outline-none focus:border-[#C8852E] transition-colors"
+                              className="w-full bg-white border border-[#F2ECE3] rounded-lg px-3.5 py-2.5 text-xs text-[#322C2B] outline-none focus:border-[#C08264] transition-colors"
                             />
                             <input
                               type="email"
@@ -239,14 +239,14 @@ export default function BioPage() {
                               placeholder="Your email address"
                               value={email}
                               onChange={(e) => setEmail(e.target.value)}
-                              className="w-full bg-white border border-[#F2ECE3] rounded-lg px-3.5 py-2.5 text-xs text-[#322C2B] outline-none focus:border-[#C8852E] transition-colors"
+                              className="w-full bg-white border border-[#F2ECE3] rounded-lg px-3.5 py-2.5 text-xs text-[#322C2B] outline-none focus:border-[#C08264] transition-colors"
                             />
                           </div>
 
                           <button
                             type="submit"
                             disabled={isSubmitting}
-                            className="w-full bg-[#C8852E] text-white hover:bg-[#9E6418] disabled:bg-[#C8852E]/50 disabled:cursor-not-allowed text-xs font-semibold py-3 rounded-xl transition-all shadow-sm flex items-center justify-center gap-1.5 cursor-pointer mt-1"
+                            className="w-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] disabled:bg-[#D9A38A]/50 disabled:text-[#1E1918]/50 disabled:cursor-not-allowed text-xs font-semibold py-3 rounded-xl transition-all shadow-sm flex items-center justify-center gap-1.5 cursor-pointer mt-1"
                           >
                             {isSubmitting ? (
                               <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
@@ -274,7 +274,7 @@ export default function BioPage() {
 
                           {/* Interactive breathing visual guide */}
                           <div className="flex flex-col items-center justify-center space-y-3">
-                            <div className="w-24 h-24 rounded-full bg-[#C8852E]/5 flex items-center justify-center relative">
+                            <div className="w-24 h-24 rounded-full bg-[#D9A38A]/10 flex items-center justify-center relative">
                               {/* Pulse background sphere */}
                               <motion.div
                                 animate={{
@@ -286,11 +286,11 @@ export default function BioPage() {
                                   repeat: Infinity,
                                   ease: 'easeInOut'
                                 }}
-                                className="absolute inset-0 rounded-full bg-[#C8852E]/10"
+                                className="absolute inset-0 rounded-full bg-[#D9A38A]/15"
                               />
                               {/* Inner core */}
                               <div className="relative w-16 h-16 rounded-full bg-white shadow-inner border border-[#F2ECE3] flex flex-col items-center justify-center">
-                                <span className="font-body text-[10px] font-medium text-[#C8852E] tracking-widest uppercase">
+                                <span className="font-body text-[10px] font-medium text-[#C08264] tracking-widest uppercase">
                                   {isPlaying ? breathPhase : 'Ready'}
                                 </span>
                               </div>
@@ -299,9 +299,9 @@ export default function BioPage() {
                             {isPlaying && (
                               <div className="w-32 bg-[#F2ECE3] h-1 rounded-full overflow-hidden">
                                 <div 
-                                  className="bg-[#C8852E] h-full transition-all duration-75"
+                                  className="bg-[#C08264] h-full transition-all duration-75"
                                   style={{ width: `${breathProgress}%` }}
-                                />
+                                 />
                               </div>
                             )}
                             <p className="font-body text-[11px] text-[#6E655E] font-light text-center max-w-xs">
@@ -317,7 +317,7 @@ export default function BioPage() {
                               max={duration}
                               value={currentTime}
                               onChange={handleSeek}
-                              className="w-full h-1 bg-[#F2ECE3] accent-[#C8852E] rounded-lg appearance-none cursor-pointer"
+                              className="w-full h-1 bg-[#F2ECE3] accent-[#C08264] rounded-lg appearance-none cursor-pointer"
                             />
                             <div className="flex justify-between font-body text-[10px] text-[#6E655E] mt-1 font-mono">
                               <span>{formatTime(currentTime)}</span>
@@ -329,7 +329,7 @@ export default function BioPage() {
                           <div className="flex items-center gap-6">
                             <button
                               onClick={toggleMute}
-                              className="p-2.5 rounded-full hover:bg-white text-[#6E655E] hover:text-[#C8852E] transition-colors cursor-pointer"
+                              className="p-2.5 rounded-full hover:bg-white text-[#6E655E] hover:text-[#C08264] transition-colors cursor-pointer"
                               title={isMuted ? "Unmute" : "Mute"}
                             >
                               {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
@@ -337,7 +337,7 @@ export default function BioPage() {
 
                             <button
                               onClick={togglePlay}
-                              className="w-14 h-14 rounded-full bg-[#C8852E] text-white flex items-center justify-center hover:bg-[#9E6418] transition-all shadow-md active:scale-95 cursor-pointer"
+                              className="w-14 h-14 rounded-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] flex items-center justify-center transition-all shadow-md active:scale-95 cursor-pointer"
                             >
                               {isPlaying ? <Pause className="w-6 h-6 shrink-0" /> : <Play className="w-6 h-6 translate-x-0.5 shrink-0" />}
                             </button>
@@ -361,10 +361,10 @@ export default function BioPage() {
             <button
               id="btn-discovery-call"
               onClick={() => setIsBookingOpen(true)}
-              className="w-full p-4 md:p-5 border border-[#C8852E]/30 bg-white hover:bg-[#C8852E]/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-all text-left group cursor-pointer"
+              className="w-full p-4 md:p-5 border border-[#D9A38A]/30 bg-white hover:bg-[#D9A38A]/5 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-all text-left group cursor-pointer"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-[#C8852E] text-white flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
+                <div className="w-10 h-10 rounded-full bg-[#D9A38A] text-[#1E1918] flex items-center justify-center shrink-0 shadow-sm group-hover:scale-105 transition-transform">
                   <Calendar className="w-5 h-5" />
                 </div>
                 <div>
@@ -386,7 +386,7 @@ export default function BioPage() {
               className="w-full p-4 md:p-5 border border-[#F2ECE3] bg-white hover:bg-[#F2ECE3]/30 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-all text-left group flex"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-[#F2ECE3] text-[#C8852E] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-[#F2ECE3] text-[#C08264] flex items-center justify-center shrink-0">
                   <Compass className="w-5 h-5" />
                 </div>
                 <div>
@@ -408,7 +408,7 @@ export default function BioPage() {
               className="w-full p-4 md:p-5 border border-[#F2ECE3] bg-white hover:bg-[#F2ECE3]/30 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-all text-left group flex"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-[#F2ECE3] text-[#C8852E] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-[#F2ECE3] text-[#C08264] flex items-center justify-center shrink-0">
                   <Globe className="w-5 h-5" />
                 </div>
                 <div>
@@ -432,7 +432,7 @@ export default function BioPage() {
               className="w-full p-4 md:p-5 border border-[#F2ECE3] bg-white hover:bg-[#F2ECE3]/30 rounded-2xl flex items-center justify-between shadow-sm hover:shadow-md transition-all text-left group flex"
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-full bg-[#F2ECE3] text-[#C8852E] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-[#F2ECE3] text-[#C08264] flex items-center justify-center shrink-0">
                   <Instagram className="w-5 h-5" />
                 </div>
                 <div>
@@ -457,18 +457,18 @@ export default function BioPage() {
           <div className="flex justify-center items-center gap-6 mb-6">
             <a 
               href="mailto:miro@mirokloosterman.com" 
-              className="flex items-center gap-1.5 text-xs text-[#322C2B] hover:text-[#C8852E] transition-colors"
+              className="flex items-center gap-1.5 text-xs text-[#322C2B] hover:text-[#C08264] transition-colors"
             >
-              <Mail className="w-3.5 h-3.5 text-[#C8852E]" />
+              <Mail className="w-3.5 h-3.5 text-[#C08264]" />
               <span>miro@mirokloosterman.com</span>
             </a>
             <a 
               href="https://wa.me/31681400180" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center gap-1.5 text-xs text-[#322C2B] hover:text-[#C8852E] transition-colors"
+              className="flex items-center gap-1.5 text-xs text-[#322C2B] hover:text-[#C08264] transition-colors"
             >
-              <WhatsAppIcon className="w-3.5 h-3.5 text-[#C8852E]" />
+              <WhatsAppIcon className="w-3.5 h-3.5 text-[#C08264]" />
               <span>+31 6 8140 0180</span>
             </a>
           </div>
@@ -476,7 +476,7 @@ export default function BioPage() {
           <div className="border-t border-[#F2ECE3]/80 pt-5 mt-4">
             <Link 
               href="/" 
-              className="font-body text-xs font-semibold hover:text-[#C8852E] tracking-wider uppercase text-[#6E655E] transition-colors inline-flex items-center gap-1"
+              className="font-body text-xs font-semibold hover:text-[#C08264] tracking-wider uppercase text-[#6E655E] transition-colors inline-flex items-center gap-1"
             >
               <span>Visit the full website &rarr;</span>
             </Link>

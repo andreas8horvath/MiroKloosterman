@@ -65,7 +65,7 @@ export default function GroupRetreatPage() {
               <div className="pt-4">
                 <button
                   onClick={() => setIsBookingOpen(true)}
-                  className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white font-body text-sm px-8 py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide inline-flex items-center gap-2 cursor-pointer font-medium shadow-sm hover:shadow-md"
+                  className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] font-body text-sm px-8 py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide inline-flex items-center gap-2 cursor-pointer font-medium shadow-sm hover:shadow-md"
                 >
                   Inquire about upcoming dates 
                   <Calendar className="w-4.5 h-4.5" />
@@ -100,7 +100,7 @@ export default function GroupRetreatPage() {
           
           <div className="lg:col-span-12 space-y-4 text-center">
             <ScrollReveal variant="up" duration={0.8}>
-              <span className="font-mono text-[10px] tracking-widest text-[#C8852E] uppercase font-semibold block">
+              <span className="font-mono text-[10px] tracking-widest text-[#C08264] uppercase font-semibold block">
                 Damla Yaku & Miro Kloosterman presents
               </span>
               <h2 className="font-display text-4xl md:text-5xl text-[#322C2B] font-light tracking-tight mt-2 animate-pulse">
@@ -122,10 +122,10 @@ export default function GroupRetreatPage() {
           {programOfferings.map((prog, idx) => (
             <ScrollReveal key={idx} variant="up" duration={0.8} delay={idx * 0.08}>
               <div 
-                className="bg-white border border-[#F2ECE3] hover:border-[#C8852E]/30 rounded-xl p-6 space-y-3 transition-all duration-300 shadow-sm h-full"
+                className="bg-white border border-[#F2ECE3] hover:border-[#D9A38A]/30 rounded-xl p-6 space-y-3 transition-all duration-300 shadow-sm h-full"
               >
-                <div className="w-10 h-10 rounded-full bg-[#C8852E]/10 flex items-center justify-center text-[#C8852E]">
-                  <Stars className="w-5 h-5 text-[#C8852E]" />
+                <div className="w-10 h-10 rounded-full bg-[#D9A38A]/10 flex items-center justify-center text-[#C08264]">
+                  <Stars className="w-5 h-5 text-[#C08264]" />
                 </div>
                 <h4 className="font-display text-lg text-[#322C2B] font-light">
                   {prog.title}
@@ -141,7 +141,7 @@ export default function GroupRetreatPage() {
 
       {/* Sacred Bali Ceremonies Segment */}
       <section className="py-20 bg-[#2C4A47] text-white overflow-hidden relative">
-        <div className="absolute inset-0 bg-gradient-radial from-[#C8852E]/10 to-transparent blur-[120px] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-radial from-[#D9A38A]/10 to-transparent blur-[120px] pointer-events-none" />
         
         <ScrollReveal variant="up" duration={0.8}>
           <div className="max-w-4xl mx-auto px-6 text-center space-y-6 relative z-10">

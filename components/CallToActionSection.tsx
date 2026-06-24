@@ -11,7 +11,7 @@ export default function CallToActionSection() {
   return (
     <section className="bg-[#2C4A47] text-white py-20 md:py-28 relative overflow-hidden text-center">
       {/* Light-bloom: Amber radial glow radiating out of the deep teal grounding section */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[350px] bg-gradient-to-b from-[#C8852E]/15 to-transparent rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[350px] bg-gradient-to-b from-[#D9A38A]/15 to-transparent rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 relative z-10 space-y-6 md:space-y-8">
         <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#D9A38A] block">
@@ -33,7 +33,7 @@ export default function CallToActionSection() {
         <div className="pt-4">
           <button
             onClick={() => setIsOpen(true)}
-            className="bg-[#C8852E] hover:bg-[#9E6418] text-white font-body text-base px-10 py-4 rounded-full transition-all duration-300 ease-out tracking-wide shadow-lg hover:shadow-xl hover:-translate-y-0.5 hover:scale-[1.01] hover:brightness-105 cursor-pointer inline-flex items-center gap-2.5 font-medium relative overflow-hidden group"
+            className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] font-body text-base px-10 py-4 rounded-full transition-all duration-300 ease-out tracking-wide shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-95 cursor-pointer inline-flex items-center gap-2.5 font-medium relative overflow-hidden group"
           >
             <Calendar className="w-5 h-5" />
             Book a free discovery call
@@ -42,7 +42,7 @@ export default function CallToActionSection() {
 
         <div className="pt-6 flex justify-center items-center gap-2 text-xs text-[#FBF8F3]/50 font-light">
           <Heart className="w-3.5 h-3.5 text-[#D9A38A]" />
-          <span>I respond personally over WhatsApp/Email within 24 hours.</span>
+          <span>I respond personally over WhatsApp/Email as soon as possible.</span>
         </div>
       </div>
 

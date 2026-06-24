@@ -85,9 +85,9 @@ export default function BodyResetPage() {
           {benefits.map((ben, idx) => (
             <ScrollReveal key={idx} variant="up" duration={0.8} delay={idx * 0.08}>
               <div 
-                className="p-8 bg-white border border-[#F2ECE3] shadow-sm rounded-xl space-y-3 hover:border-[#C8852E]/30 transition-all flex flex-col justify-start h-full"
+                className="p-8 bg-white border border-[#F2ECE3] shadow-sm rounded-xl space-y-3 hover:border-[#C08264]/30 transition-all flex flex-col justify-start h-full"
               >
-                <CheckCircle className="w-6 h-6 text-[#C8852E] flex-shrink-0" />
+                <CheckCircle className="w-6 h-6 text-[#C08264] flex-shrink-0" />
                 <p className="font-body text-sm font-light text-[#322C2B] leading-relaxed">
                   {ben}
                 </p>
@@ -101,37 +101,6 @@ export default function BodyResetPage() {
             &ldquo;Many people feel a real difference after a single session — lighter, more flexible, more at ease. Deeper change usually takes a few sessions, with time in between for the body to integrate. Healing takes patience, and the body sets the pace.&rdquo;
           </div>
         </ScrollReveal>
-      </section>
-
-      {/* Reviews */}
-      <section className="py-20 bg-[#F2ECE3]/40 border-t border-[#F2ECE3]">
-        <div className="max-w-4xl mx-auto px-6 space-y-12 overflow-hidden">
-          <ScrollReveal variant="up" duration={0.8}>
-            <h3 className="font-display text-2xl text-center text-[#322C2B] font-light">
-              Somatic results
-            </h3>
-          </ScrollReveal>
-
-          <div className="space-y-8">
-            <ScrollReveal variant="up" duration={0.8} delay={0.05}>
-              <div className="bg-white p-8 rounded-xl border border-[#F2ECE3] shadow-sm">
-                <blockquote className="font-display italic text-lg text-[#322C2B] leading-relaxed mb-4 font-light">
-                  &ldquo;His body reset therapy is unique and helps the body realign itself. It helped me a lot with my back pain and always makes me feel lighter, more flexible, balanced and more energised in the days after.&rdquo;
-                </blockquote>
-                <span className="font-body text-xs font-semibold text-[#322C2B]">Steffi — Client</span>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal variant="up" duration={0.8} delay={0.15}>
-              <div className="bg-white p-8 rounded-xl border border-[#F2ECE3] shadow-sm">
-                <blockquote className="font-display italic text-lg text-[#322C2B] leading-relaxed mb-4 font-light">
-                  &ldquo;I had tension and pain in my neck and shoulders for years — I couldn&apos;t even turn my head. After only one session it was all gone. Every cent worth it.&rdquo;
-                </blockquote>
-                <span className="font-body text-xs font-semibold text-[#322C2B]">Anna — Client</span>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
       </section>
 
       {/* Final CTA */}

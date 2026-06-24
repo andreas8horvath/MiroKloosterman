@@ -23,7 +23,7 @@ export default function PrivacyPage() {
               We do not share, sell, or license any client health narratives or personal details with third-party networks. All communication remains strictly confidential, secure, and personal to Miro Kloosterman.
             </p>
             <p>
-              Should you have any inquiries regarding data deletion or adjustments of your stored communication coordinates, please email: <a href="mailto:miro@mirokloosterman.com" className="text-[#C8852E] font-medium underline">miro@mirokloosterman.com</a>.
+              Should you have any inquiries regarding data deletion or adjustments of your stored communication coordinates, please email: <a href="mailto:miro@mirokloosterman.com" className="text-[#C08264] font-medium underline">miro@mirokloosterman.com</a>.
             </p>
           </div>
         </div>

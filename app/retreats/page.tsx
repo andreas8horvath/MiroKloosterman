@@ -41,12 +41,12 @@ export default function RetreatsHubPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 space-y-6">
               <ScrollReveal variant="left" duration={0.8}>
-                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C8852E]">
+                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C08264]">
                   <Compass className="w-4 h-4" />
                   <span>One-on-One Synthesis</span>
                 </div>
                 <h2 className="font-display text-3xl md:text-4xl text-[#322C2B] font-light leading-tight mt-2">
-                  Private Retreats — <span className="font-display italic text-[#C8852E]">one-on-one in Bali</span>
+                  Private Retreats — <span className="font-display italic text-[#C08264]">one-on-one in Bali</span>
                 </h2>
                 <p className="font-body text-base text-[#6E655E] font-light leading-relaxed">
                   The whole experience, built entirely around you. Deep, personal, and held at your pace, with my full attention from before you arrive until after you leave. This encompasses custom-tailored detox, movement, hypnotherapy, breathwork, and sacred temple water blessings designed for your specific health requirements.
@@ -54,7 +54,7 @@ export default function RetreatsHubPage() {
                 <div className="pt-2">
                   <Link
                     href="/retreats/private"
-                    className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white font-body text-sm px-8 py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide inline-flex items-center gap-2 font-medium cursor-pointer shadow-sm hover:shadow-md"
+                    className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] font-body text-sm px-8 py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide inline-flex items-center gap-2 font-medium cursor-pointer shadow-sm hover:shadow-md"
                   >
                     Explore Private Retreats
                     <ArrowRight className="w-4 h-4" />
@@ -73,7 +73,7 @@ export default function RetreatsHubPage() {
                     className="w-full h-full object-cover grayscale-[10%] brightness-95 transition-transform duration-1000 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 bg-white/95 px-4 py-1.5 rounded-full text-xs font-body font-medium flex items-center gap-1.5 text-[#322C2B]">
-                    <MapPin className="w-3.5 h-3.5 text-[#C8852E]" /> Ubud, Bali
+                    <MapPin className="w-3.5 h-3.5 text-[#C08264]" /> Bali
                   </div>
                 </div>
               </ScrollReveal>
@@ -90,12 +90,12 @@ export default function RetreatsHubPage() {
             {/* Image swap for responsive layout stack */}
             <div className="lg:col-span-6 lg:order-last space-y-6">
               <ScrollReveal variant="right" duration={0.8}>
-                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C8852E]">
+                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#C08264]">
                   <Users className="w-4 h-4" />
                   <span>Sacred Group Medicine</span>
                 </div>
                 <h2 className="font-display text-3xl md:text-4xl text-[#322C2B] font-light leading-tight mt-2">
-                  Group Retreats — <span className="font-display italic text-[#C8852E]">Bali and around the world</span>
+                  Group Retreats — <span className="font-display italic text-[#C08264]">Bali and around the world</span>
                 </h2>
                 <p className="font-body text-base text-[#6E655E] font-light leading-relaxed">
                   A shared journey in a safe, loving container — alongside others walking their own path, woven together with my partner Damla Yaku through breath, water, voice, movement, ecstatic dance, and Balinese fire ceremony.
@@ -122,7 +122,7 @@ export default function RetreatsHubPage() {
                     className="w-full h-full object-cover grayscale-[10%] brightness-95 transition-transform duration-1000 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4 bg-white/95 px-4 py-1.5 rounded-full text-xs font-body font-medium flex items-center gap-1.5 text-[#322C2B]">
-                    <MapPin className="w-3.5 h-3.5 text-[#C8852E]" /> Bali, Europe & Worldwide
+                    <MapPin className="w-3.5 h-3.5 text-[#C08264]" /> Bali, Europe & Worldwide
                   </div>
                 </div>
               </ScrollReveal>
@@ -136,7 +136,7 @@ export default function RetreatsHubPage() {
       {/* Mid Transition Note */}
       <ScrollReveal variant="up" duration={0.8}>
         <section className="py-16 max-w-3xl mx-auto px-6 text-center space-y-4">
-          <Heart className="w-6 h-6 text-[#C8852E] mx-auto" />
+          <Heart className="w-6 h-6 text-[#C08264] mx-auto" />
           <h3 className="font-display text-2xl text-[#322C2B] font-light">
             Not sure which format fits your path?
           </h3>

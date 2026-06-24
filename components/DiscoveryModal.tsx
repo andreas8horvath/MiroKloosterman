@@ -69,7 +69,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
             className="bg-[#FBF8F3] w-full max-w-lg rounded-2xl shadow-2xl relative overflow-hidden text-[#322C2B] border border-[#F2ECE3] z-10 max-h-[90vh] flex flex-col"
           >
             {/* Soft decorative light-bloom on top right corner */}
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#C8852E]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-48 h-48 bg-[#D9A38A]/10 rounded-full blur-3xl pointer-events-none" />
 
             {/* Header */}
             <div className="p-6 md:p-8 flex items-center justify-between border-b border-[#F2ECE3] shrink-0">
@@ -101,7 +101,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                   {/* Name field */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-semibold uppercase tracking-wider text-[#6E655E] flex items-center gap-1.5">
-                      <User className="w-3.5 h-3.5 text-[#C8852E]" /> Complete Name *
+                      <User className="w-3.5 h-3.5 text-[#C08264]" /> Complete Name *
                     </label>
                     <input
                       type="text"
@@ -109,7 +109,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                       placeholder="e.g. Jacqueline de Boer"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C8852E] font-body transition-colors"
+                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C08264] font-body transition-colors"
                     />
                   </div>
 
@@ -118,7 +118,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                     {/* Email */}
                     <div className="space-y-1.5">
                       <label className="text-xs font-semibold uppercase tracking-wider text-[#6E655E] flex items-center gap-1.5">
-                        <Mail className="w-3.5 h-3.5 text-[#C8852E]" /> Email *
+                        <Mail className="w-3.5 h-3.5 text-[#C08264]" /> Email *
                       </label>
                       <input
                         type="email"
@@ -126,13 +126,13 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                         placeholder="your@email.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C8852E] font-body transition-colors"
+                        className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C08264] font-body transition-colors"
                       />
                     </div>
                     {/* WhatsApp */}
                     <div className="space-y-1.5">
                       <label className="text-xs font-semibold uppercase tracking-wider text-[#6E655E] flex items-center gap-1.5">
-                        <Phone className="w-3.5 h-3.5 text-[#C8852E]" /> WhatsApp Number *
+                        <Phone className="w-3.5 h-3.5 text-[#C08264]" /> WhatsApp Number *
                       </label>
                       <input
                         type="tel"
@@ -140,7 +140,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                         placeholder="+31 6 12345678"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C8852E] font-body transition-colors"
+                        className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C08264] font-body transition-colors"
                       />
                     </div>
                   </div>
@@ -148,13 +148,13 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                   {/* Path Choice Dropdown */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-semibold uppercase tracking-wider text-[#6E655E] flex items-center gap-1.5">
-                      <HelpCircle className="w-3.5 h-3.5 text-[#C8852E]" /> Area of Interest
+                      <HelpCircle className="w-3.5 h-3.5 text-[#C08264]" /> Area of Interest
                     </label>
                     <div className="relative">
                       <select
                         value={formData.experience}
                         onChange={(e) => setFormData({ ...formData, experience: e.target.value })}
-                        className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm appearance-none focus:outline-none focus:border-[#C8852E] font-body text-[#322C2B] transition-colors"
+                        className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm appearance-none focus:outline-none focus:border-[#C08264] font-body text-[#322C2B] transition-colors"
                       >
                         <option>Private Retreat (Bali, One-on-One)</option>
                         <option>Group Retreat (Bali & Worldwide)</option>
@@ -172,16 +172,25 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                   </div>
 
                   {/* Short description of struggle */}
-                  <div className="space-y-1.5">
+                  <div className="space-y-2">
                     <label className="text-xs font-semibold uppercase tracking-wider text-[#6E655E] flex items-center gap-1.5">
                       What are you working through or seeking?
                     </label>
+                    <div className="bg-[#F2ECE3]/30 border border-[#F2ECE3] rounded-lg p-4 space-y-2 text-xs text-[#6E655E] font-light leading-relaxed">
+                      <p className="font-medium text-[#322C2B]">Please consider sharing:</p>
+                      <ul className="list-disc pl-4 space-y-1">
+                        <li>What is it that you need support with?</li>
+                        <li>Do you have any health challenges?</li>
+                        <li>Are you willing to put in the work, and invest your time and energy?</li>
+                        <li>What is the financial investment you can and want to commit to your journey?</li>
+                      </ul>
+                    </div>
                     <textarea
-                      rows={3}
+                      rows={4}
                       placeholder="e.g. I've been feeling physically weary / stuck in burnout patterns..."
                       value={formData.struggle}
                       onChange={(e) => setFormData({ ...formData, struggle: e.target.value })}
-                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C8852E] font-body transition-colors resize-none"
+                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C08264] font-body transition-colors"
                     />
                   </div>
 
@@ -198,8 +207,8 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                           onClick={() => setFormData({ ...formData, timeframe: opt })}
                           className={`py-2 px-3 text-xs border rounded-lg transition-all font-body ${
                             formData.timeframe === opt
-                              ? 'border-[#C8852E] bg-[#C8852E]/10 text-[#C8852E] font-semibold'
-                              : 'border-[#F2ECE3] bg-white text-[#6E655E] hover:border-[#C8852E]/50'
+                              ? 'border-[#C08264] bg-[#D9A38A]/10 text-[#C08264] font-semibold'
+                              : 'border-[#F2ECE3] bg-white text-[#6E655E] hover:border-[#C08264]/50'
                           }`}
                         >
                           {opt}
@@ -212,7 +221,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white disabled:bg-[#D9A38A]/50 disabled:text-[#1E1918]/50 disabled:cursor-not-allowed font-body text-sm py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer mt-4"
+                    className="w-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] disabled:bg-[#D9A38A]/50 disabled:text-[#1E1918]/50 disabled:cursor-not-allowed font-body text-sm py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer mt-4"
                   >
                     {isSubmitting ? (
                       <span className="w-5 h-5 border-2 border-[#1E1918] border-t-transparent rounded-full animate-spin" />
@@ -227,7 +236,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
               ) : (
                 /* Success screen */
                 <div id="success-screen" className="text-center py-8 space-y-6 flex flex-col items-center">
-                  <div className="p-4 bg-[#C8852E]/10 text-[#C8852E] rounded-full">
+                  <div className="p-4 bg-[#D9A38A]/10 text-[#C08264] rounded-full">
                     <CheckCircle className="w-16 h-16" />
                   </div>
 
@@ -241,7 +250,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                   </div>
 
                   <p className="font-body text-[#322C2B] leading-relaxed max-w-sm text-sm font-light">
-                    &ldquo;I read everything myself. I will reach out over WhatsApp or email within 24 hours to schedule our call. I look forward to hearing your story and finding out how we can walk this stretch together.&rdquo;
+                    &ldquo;I read everything myself. I will reach out over WhatsApp or email as soon as possible to schedule our call. I look forward to hearing your story and finding out how we can walk this stretch together.&rdquo;
                   </p>
 
                   <div className="pt-4 flex flex-col items-center">

@@ -93,7 +93,7 @@ export default function ModalitiesHubPage() {
                 {/* Asymmetric positioning based on Even/Odd */}
                 <div className={`lg:col-span-6 space-y-6 ${isEven ? 'lg:order-first' : 'lg:order-last'}`}>
                   <ScrollReveal variant={isEven ? 'right' : 'left'} duration={0.85}>
-                    <div className="w-12 h-12 bg-[#C8852E]/10 rounded-full flex items-center justify-center text-[#C8852E]">
+                    <div className="w-12 h-12 bg-[#D9A38A]/15 rounded-full flex items-center justify-center text-[#C08264]">
                       <IconComponent className="w-5.5 h-5.5 stroke-[1.5]" />
                     </div>
                     
@@ -112,7 +112,7 @@ export default function ModalitiesHubPage() {
                     <div className="pt-4">
                       <Link
                         href={mod.detailLink}
-                        className="text-[#C8852E] hover:text-[#9E6418] font-body text-sm font-medium inline-flex items-center gap-1 group transition-all"
+                        className="text-[#C08264] hover:text-[#8C5135] font-body text-sm font-medium inline-flex items-center gap-1 group transition-all"
                       >
                         Explore this modality 
                         <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

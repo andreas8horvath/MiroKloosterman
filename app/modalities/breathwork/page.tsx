@@ -106,9 +106,9 @@ export default function BreathworkPage() {
 
           {/* Format 3: Safety Guard */}
           <ScrollReveal variant="up" duration={0.8} delay={0.25}>
-            <div className="bg-white border border-[#F2ECE3] p-8 rounded-xl shadow-sm border-t-4 border-t-[#C8852E] space-y-3 h-full">
-              <div className="flex items-center gap-2 text-xs font-semibold tracking-wider text-[#C8852E] uppercase">
-                <ShieldAlert className="w-4 h-4 text-[#C8852E]" />
+            <div className="bg-white border border-[#F2ECE3] p-8 rounded-xl shadow-sm border-t-4 border-t-[#C08264] space-y-3 h-full">
+              <div className="flex items-center gap-2 text-xs font-semibold tracking-wider text-[#C08264] uppercase">
+                <ShieldAlert className="w-4 h-4 text-[#C08264]" />
                 <span>Safety Parameters</span>
               </div>
               <p className="font-body text-xs text-[#6E655E] font-light leading-relaxed">
@@ -117,37 +117,6 @@ export default function BreathworkPage() {
             </div>
           </ScrollReveal>
 
-        </div>
-      </section>
-
-      {/* Specific Testimonials */}
-      <section className="py-20 bg-[#F2ECE3]/40 border-t border-[#F2ECE3]">
-        <div className="max-w-4xl mx-auto px-6 space-y-12 overflow-hidden">
-          <ScrollReveal variant="up" duration={0.8}>
-            <h3 className="font-display text-2xl lg:text-3xl text-center text-[#322C2B] font-light">
-              Insights from the mat
-            </h3>
-          </ScrollReveal>
-
-          <div className="space-y-8">
-            <ScrollReveal variant="up" duration={0.8} delay={0.05}>
-              <div className="bg-white p-8 rounded-xl border border-[#F2ECE3] shadow-sm">
-                <blockquote className="font-display italic text-lg text-[#322C2B] leading-relaxed mb-4 font-light">
-                  &ldquo;I have practiced many breathing techniques over the years. The session with Miro was the most life-changing yet. I released so much that I felt as if I left a ton of weight on the mat. I felt light and changed — and I still feel this way weeks later.&rdquo;
-                </blockquote>
-                <span className="font-body text-xs font-semibold text-[#322C2B]">Beata Swist — Toronto, Canada</span>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal variant="up" duration={0.8} delay={0.15}>
-              <div className="bg-white p-8 rounded-xl border border-[#F2ECE3] shadow-sm">
-                <blockquote className="font-display italic text-lg text-[#322C2B] leading-relaxed mb-4 font-light">
-                  &ldquo;Liberation. That is the word that sticks with me. Miro guides you in peace and quiet, in a safe environment: &apos;everything is good, nothing is wrong.&apos; If you are curious — look no further. Just book a session and experience it.&rdquo;
-                </blockquote>
-                <span className="font-body text-xs font-semibold text-[#322C2B]">Ted — Client</span>
-              </div>
-            </ScrollReveal>
-          </div>
         </div>
       </section>
 

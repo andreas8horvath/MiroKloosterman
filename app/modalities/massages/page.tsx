@@ -36,7 +36,7 @@ export default function MassagesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-6">
               <ScrollReveal variant="left" duration={0.8}>
-                <span className="font-mono text-xs font-semibold text-[#C8852E] uppercase tracking-widest block">
+                <span className="font-mono text-xs font-semibold text-[#C08264] uppercase tracking-widest block">
                   Part A — Core Release
                 </span>
                 <h2 className="font-display text-3xl text-[#322C2B] font-light tracking-wide leading-tight mt-2">
@@ -52,7 +52,7 @@ export default function MassagesPage() {
                   <p>
                     It is completely common and natural for raw emotions to surface during a session — including quiet crying — as deep structural tension finally moves, liquefies, and dissolves. As your core organs begin to move more freely, you will digest physical nutrients better. And, often, you will digest the events of your life a little better too.
                   </p>
-                  <p className="italic font-display text-[#C8852E] text-base mt-2">
+                  <p className="italic font-display text-[#C08264] text-base mt-2">
                     A typical therapeutic session is around 90 minutes. Longer is possible.
                   </p>
                 </div>
@@ -62,7 +62,7 @@ export default function MassagesPage() {
             <div className="lg:col-span-5 h-full">
               <ScrollReveal variant="right" duration={0.8}>
                 <div className="flex flex-col justify-between bg-[#F2ECE3]/30 border border-[#F2ECE3] rounded-2xl p-8 shadow-sm h-full">
-                  <div className="text-[#C8852E] italic font-display text-2xl leading-relaxed font-light mb-6">
+                  <div className="text-[#C08264] italic font-display text-2xl leading-relaxed font-light mb-6">
                     &ldquo;What seems to be &apos;just a massage&apos; has been life-changing for me. Miro created the safest space and took all the time to be there for me. After this session, my life shifted completely in a positive way.&rdquo;
                   </div>
                   <div className="border-t border-[#F2ECE3] pt-4 text-xs font-body">
@@ -80,7 +80,7 @@ export default function MassagesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 lg:order-last space-y-6">
               <ScrollReveal variant="right" duration={0.8}>
-                <span className="font-mono text-xs font-semibold text-[#C8852E] uppercase tracking-widest block">
+                <span className="font-mono text-xs font-semibold text-[#C08264] uppercase tracking-widest block">
                   Part B — Custom Somatic Flow
                 </span>
                 <h2 className="font-display text-3xl text-[#322C2B] font-light tracking-wide leading-tight mt-2">
@@ -93,7 +93,7 @@ export default function MassagesPage() {
                   <p>
                     During an Intuitive Massage, I draw upon everything I have trained in, reading your body in the fluid moment and designing each session entirely centered on what your musculature and nervous system require.
                   </p>
-                  <p className="italic font-display text-[#C8852E] text-base mt-2">
+                  <p className="italic font-display text-[#C08264] text-base mt-2">
                     Flexible durational formats — anywhere from 60 minutes to two full hours.
                   </p>
                 </div>
@@ -103,7 +103,7 @@ export default function MassagesPage() {
             <div className="lg:col-span-5 h-full">
               <ScrollReveal variant="left" duration={0.8}>
                 <div className="flex flex-col justify-between bg-[#F2ECE3]/30 border border-[#F2ECE3] rounded-2xl p-8 shadow-sm h-full">
-                  <div className="text-[#C8852E] italic font-display text-2xl leading-relaxed font-light mb-6">
+                  <div className="text-[#C08264] italic font-display text-2xl leading-relaxed font-light mb-6">
                     &ldquo;Miro created a full relax session with sound bowls, palo santo and music. He has a warm personality and made me feel at ease. It was just what I needed.&rdquo;
                   </div>
                   <div className="border-t border-[#F2ECE3] pt-4 text-xs font-body">

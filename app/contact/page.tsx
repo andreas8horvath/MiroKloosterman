@@ -74,7 +74,7 @@ export default function ContactPage() {
           <div className="lg:col-span-5 space-y-10">
             <ScrollReveal variant="left" duration={0.8}>
               <div className="space-y-4">
-                <span className="font-body text-xs font-semibold uppercase tracking-wider text-[#C8852E] block">
+                <span className="font-body text-xs font-semibold uppercase tracking-wider text-[#C08264] block">
                   Direct Coordinates
                 </span>
                 <h2 className="font-display text-2xl md:text-3xl font-light text-[#322C2B]">
@@ -90,12 +90,12 @@ export default function ContactPage() {
                 
                 {/* Email */}
                 <li className="flex items-start space-x-4 border-b border-[#F2ECE3] pb-4">
-                  <div className="p-3 bg-[#C8852E]/10 rounded-full text-[#C8852E] shrink-0">
+                  <div className="p-3 bg-[#D9A38A]/10 rounded-full text-[#C08264] shrink-0">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div className="space-y-1">
                     <span className="text-xs uppercase tracking-wider text-[#6E655E] block font-semibold">Email Account</span>
-                    <a href="mailto:miro@mirokloosterman.com" className="hover:text-[#C8852E] transition-colors font-medium">
+                    <a href="mailto:miro@mirokloosterman.com" className="hover:text-[#C08264] transition-colors font-medium">
                       miro@mirokloosterman.com
                     </a>
                   </div>
@@ -103,12 +103,12 @@ export default function ContactPage() {
 
                 {/* WhatsApp */}
                 <li className="flex items-start space-x-4 border-b border-[#F2ECE3] pb-4">
-                  <div className="p-3 bg-[#C8852E]/10 rounded-full text-[#C8852E] shrink-0">
+                  <div className="p-3 bg-[#D9A38A]/10 rounded-full text-[#C08264] shrink-0">
                     <WhatsAppIcon className="w-5 h-5" />
                   </div>
                   <div className="space-y-1">
                     <span className="text-xs uppercase tracking-wider text-[#6E655E] block font-semibold">WhatsApp Direct</span>
-                    <a href="https://wa.me/31681400180" target="_blank" rel="noopener noreferrer" className="hover:text-[#C8852E] transition-colors font-medium">
+                    <a href="https://wa.me/31681400180" target="_blank" rel="noopener noreferrer" className="hover:text-[#C08264] transition-colors font-medium">
                       +31 6 8140 0180
                     </a>
                   </div>
@@ -116,16 +116,16 @@ export default function ContactPage() {
 
                 {/* Instagram */}
                 <li className="flex items-start space-x-4">
-                  <div className="p-3 bg-[#C8852E]/10 rounded-full text-[#C8852E] shrink-0">
+                  <div className="p-3 bg-[#D9A38A]/10 rounded-full text-[#C08264] shrink-0">
                     <Instagram className="w-5 h-5" />
                   </div>
                   <div className="space-y-1">
                     <span className="text-xs uppercase tracking-wider text-[#6E655E] block font-semibold">Instagram Portals</span>
                     <div className="flex flex-col space-y-1 font-medium">
-                      <a href="https://instagram.com/miro_kloosterman" target="_blank" rel="noopener noreferrer" className="hover:text-[#C8852E] transition-colors">
+                      <a href="https://instagram.com/miro_kloosterman" target="_blank" rel="noopener noreferrer" className="hover:text-[#C08264] transition-colors">
                         @miro_kloosterman
                       </a>
-                      <a href="https://instagram.com/healthwithmiro" target="_blank" rel="noopener noreferrer" className="hover:text-[#C8852E] transition-colors text-xs text-[#6E655E]">
+                      <a href="https://instagram.com/healthwithmiro" target="_blank" rel="noopener noreferrer" className="hover:text-[#C08264] transition-colors text-xs text-[#6E655E]">
                         @healthwithmiro
                       </a>
                     </div>
@@ -144,7 +144,7 @@ export default function ContactPage() {
           {/* Column B: Inline call planner card */}
           <div className="lg:col-span-7 bg-[#FBF8F3] border border-[#F2ECE3] rounded-2xl p-8 md:p-12 shadow-sm relative overflow-hidden">
             <ScrollReveal variant="right" duration={0.8}>
-            <div className="absolute top-0 right-0 w-36 h-36 bg-[#C8852E]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-36 h-36 bg-[#D9A38A]/10 rounded-full blur-3xl pointer-events-none" />
 
             {!isSubmitted ? (
               <form id="contact-page-scheduler" onSubmit={handleSubmit} className="space-y-6">
@@ -160,7 +160,7 @@ export default function ContactPage() {
                 {/* Name */}
                 <div className="space-y-1.5">
                   <label className="text-xs font-semibold uppercase tracking-wider text-[#6E655E] flex items-center gap-1.5">
-                    <User className="w-3.5 h-3.5 text-[#C8852E]" /> Complete Name *
+                    <User className="w-3.5 h-3.5 text-[#C08264]" /> Complete Name *
                   </label>
                   <input
                     type="text"
@@ -168,7 +168,7 @@ export default function ContactPage() {
                     placeholder="e.g. Edith Norbert"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C8852E] font-body transition-colors"
+                    className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C08264] font-body transition-colors"
                   />
                 </div>
 
@@ -184,7 +184,7 @@ export default function ContactPage() {
                       placeholder="you@email.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C8852E] font-body transition-colors"
+                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C08264] font-body transition-colors"
                     />
                   </div>
                   <div className="space-y-1.5">
@@ -197,7 +197,7 @@ export default function ContactPage() {
                       placeholder="+31 6 ..."
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C8852E] font-body transition-colors"
+                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C08264] font-body transition-colors"
                     />
                   </div>
                 </div>
@@ -210,9 +210,9 @@ export default function ContactPage() {
                   <select
                     value={formData.interest}
                     onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-                    className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm appearance-none focus:outline-none focus:border-[#C8852E] font-body text-[#322C2B]"
+                    className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm appearance-none focus:outline-none focus:border-[#C08264] font-body text-[#322C2B]"
                   >
-                    <option>Private Retreat in Ubud, Bali</option>
+                    <option>Private Retreat (One-on-One, Bali)</option>
                     <option>Group Retreat / Water to Stars</option>
                     <option>Transformative Breathwork</option>
                     <option>Structural Body Reset Therapy</option>
@@ -222,16 +222,25 @@ export default function ContactPage() {
                 </div>
 
                 {/* Explanation */}
-                <div className="space-y-1.5">
+                <div className="space-y-2">
                   <label className="text-xs font-semibold uppercase tracking-wider text-[#6E655E] block">
-                    What lives underneath your current health or life layout? (Optional)
+                    What are you working through or seeking?
                   </label>
+                  <div className="bg-[#F2ECE3]/30 border border-[#F2ECE3] rounded-lg p-4 space-y-2 text-xs text-[#6E655E] font-light leading-relaxed">
+                    <p className="font-medium text-[#322C2B]">Please consider sharing:</p>
+                    <ul className="list-disc pl-4 space-y-1">
+                      <li>What is it that you need support with?</li>
+                      <li>Do you have any health challenges?</li>
+                      <li>Are you willing to put in the work, and invest your time and energy?</li>
+                      <li>What is the financial investment you can and want to commit to your journey?</li>
+                    </ul>
+                  </div>
                   <textarea
                     rows={4}
                     placeholder="Write as much or as little as feels aligned..."
                     value={formData.struggle}
                     onChange={(e) => setFormData({ ...formData, struggle: e.target.value })}
-                    className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C8852E] font-body transition-colors resize-none"
+                    className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#C08264] font-body transition-colors"
                   />
                 </div>
 
@@ -239,12 +248,12 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
                   <div className="space-y-1.5">
                     <label className="text-xs font-semibold uppercase tracking-wider text-[#6E655E] flex items-center gap-1.5">
-                      <Clock className="w-3.5 h-3.5 text-[#C8852E]" /> Schedule Timeframe
+                      <Clock className="w-3.5 h-3.5 text-[#C08264]" /> Schedule Timeframe
                     </label>
                     <select
                       value={formData.timeframe}
                       onChange={(e) => setFormData({ ...formData, timeframe: e.target.value })}
-                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm appearance-none focus:outline-none focus:border-[#C8852E] font-body text-[#322C2B]"
+                      className="w-full bg-white border border-[#F2ECE3] rounded-lg px-4 py-3 text-sm appearance-none focus:outline-none focus:border-[#C08264] font-body text-[#322C2B]"
                     >
                       <option>As soon as possible</option>
                       <option>This coming week</option>
@@ -258,7 +267,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white disabled:bg-[#D9A38A]/50 disabled:text-[#1E1918]/50 disabled:cursor-not-allowed font-body text-sm py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] disabled:bg-[#D9A38A]/50 disabled:text-[#1E1918]/50 disabled:cursor-not-allowed font-body text-sm py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide shadow-md flex items-center justify-center gap-2 cursor-pointer"
                 >
                   {isSubmitting ? (
                     <span className="w-5 h-5 border-2 border-[#1E1918] border-t-transparent rounded-full animate-spin" />
@@ -273,7 +282,7 @@ export default function ContactPage() {
             ) : (
               /* Success form screen */
               <div id="contact-success" className="text-center py-12 space-y-6 flex flex-col items-center">
-                <div className="p-4 bg-[#C8852E]/10 text-[#C8852E] rounded-full">
+                <div className="p-4 bg-[#D9A38A]/10 text-[#C08264] rounded-full">
                   <CheckCircle className="w-16 h-16" />
                 </div>
 
@@ -287,7 +296,7 @@ export default function ContactPage() {
                 </div>
 
                 <p className="font-body text-sm text-[#322C2B] leading-relaxed max-w-sm font-light">
-                  I will reach out to you over WhatsApp at {formData.phone} or via email at {formData.email} within 24 hours. We will find a relaxed slot that works for both of us.
+                  I will reach out to you over WhatsApp at {formData.phone} or via email at {formData.email} as soon as possible. We will find a relaxed slot that works for both of us.
                 </p>
 
                 <button

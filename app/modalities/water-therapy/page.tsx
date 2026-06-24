@@ -102,9 +102,9 @@ export default function WaterTherapyPage() {
           {stages.map((stg, idx) => (
             <ScrollReveal key={idx} variant="up" duration={0.8} delay={idx * 0.08}>
               <div 
-                className="bg-white border border-[#F2ECE3] rounded-xl p-8 space-y-4 shadow-sm hover:border-[#C8852E]/30 transition-all h-full"
+                className="bg-white border border-[#F2ECE3] rounded-xl p-8 space-y-4 shadow-sm hover:border-[#C08264]/30 transition-all h-full"
               >
-                <div className="w-8 h-8 rounded-full bg-[#C8852E]/10 text-[#C8852E] flex items-center justify-center font-mono text-xs font-bold">
+                <div className="w-8 h-8 rounded-full bg-[#D9A38A]/15 text-[#C08264] flex items-center justify-center font-mono text-xs font-bold">
                   0{idx + 1}
                 </div>
                 <h4 className="font-display text-lg font-light text-[#322C2B] border-b border-[#F2ECE3] pb-2">
@@ -116,27 +116,6 @@ export default function WaterTherapyPage() {
               </div>
             </ScrollReveal>
           ))}
-        </div>
-      </section>
-
-      {/* Verified Reviews */}
-      <section className="py-20 bg-[#F2ECE3]/40 border-t border-[#F2ECE3]">
-        <div className="max-w-4xl mx-auto px-6 space-y-8 text-center overflow-hidden">
-          <ScrollReveal variant="up" duration={0.8}>
-            <h3 className="font-display text-2xl lg:text-3xl text-[#322C2B] font-light">
-              Surrender Journals
-            </h3>
-          </ScrollReveal>
-          <ScrollReveal variant="up" duration={0.8} delay={0.05}>
-            <div className="bg-white p-8 md:p-10 rounded-2xl border border-[#F2ECE3] shadow-md max-w-3xl mx-auto flex flex-col justify-between items-center text-left">
-              <blockquote className="font-display italic text-lg md:text-xl text-[#322C2B] leading-relaxed mb-6 font-light">
-                &ldquo;Something that felt more like an inner journey than a physical activity. The anxiety I was carrying completely melted away. The gentle floating felt like being held by nature itself — warm, embracing, deeply soothing. I felt truly safe in your presence, especially in the water.&rdquo;
-              </blockquote>
-              <span className="font-body text-xs font-semibold text-[#322C2B] uppercase tracking-wider block">
-                — Water therapy client, Ubud
-              </span>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 

@@ -89,7 +89,7 @@ export default function HypnotherapyPage() {
               <div 
                 className="flex items-start gap-3 p-4 bg-white border border-[#F2ECE3] rounded-lg shadow-sm h-full"
               >
-                <CheckCircle className="w-5 h-5 text-[#C8852E] flex-shrink-0 mt-0.5" />
+                <CheckCircle className="w-5 h-5 text-[#C08264] flex-shrink-0 mt-0.5" />
                 <span className="font-body text-sm font-light text-[#322C2B] leading-relaxed">
                   {issue}
                 </span>
@@ -103,25 +103,6 @@ export default function HypnotherapyPage() {
             &ldquo;It often works beautifully online. Many people go deeper and surrender quicker from the security and comfort of their own home environment, where they already feel safe or protected.&rdquo;
           </div>
         </ScrollReveal>
-      </section>
-
-      {/* Reviews */}
-      <section className="py-20 bg-[#F2ECE3]/40 border-t border-[#F2ECE3]">
-        <div className="max-w-4xl mx-auto px-6 space-y-8 text-center overflow-hidden">
-          <ScrollReveal variant="up" duration={0.8}>
-            <h3 className="font-display text-2xl text-[#322C2B] font-light font-sans">
-              Transformational Feedback
-            </h3>
-          </ScrollReveal>
-          <ScrollReveal variant="up" duration={0.8} delay={0.05}>
-            <div className="bg-white p-8 md:p-10 rounded-xl border border-[#F2ECE3] shadow-sm max-w-xl mx-auto text-left">
-              <blockquote className="font-display italic text-lg text-[#322C2B] leading-relaxed mb-4 font-light">
-                &ldquo;Our hypnotherapy sessions were deeply insightful and transformative, leaving me with more clarity and inner strength.&rdquo;
-              </blockquote>
-              <span className="font-body text-xs font-semibold text-[#322C2B]">— Awa</span>
-            </div>
-          </ScrollReveal>
-        </div>
       </section>
 
       {/* Final CTA */}

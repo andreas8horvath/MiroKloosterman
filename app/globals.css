@@ -3,8 +3,8 @@
 @theme {
   --color-bg-light: #FBF8F3;
   --color-bg-alt: #F2ECE3;
-  --color-brand-amber: #C8852E;
-  --color-brand-amber-deep: #9E6418;
+  --color-brand-amber: #D9A38A;
+  --color-brand-amber-deep: #C08264;
   --color-brand-blush: #D9A38A;
   --color-brand-deepteal: #2C4A47;
   --color-brand-deepteal-soft: #5A7470;
@@ -17,7 +17,7 @@
 
 /* Custom background animations / soft light glow */
 .light-bloom {
-  background: radial-gradient(circle at 70% 20%, rgba(200, 133, 46, 0.15) 0%, transparent 60%);
+  background: radial-gradient(circle at 70% 20%, rgba(217, 163, 138, 0.15) 0%, transparent 60%);
 }
 
 .glow-hover {
@@ -25,7 +25,7 @@
 }
 
 .glow-hover:hover {
-  box-shadow: 0 8px 24px rgba(200, 133, 46, 0.35);
+  box-shadow: 0 8px 24px rgba(217, 163, 138, 0.35);
 }
 
 /* Smooth motion custom adjustments */

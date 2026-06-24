@@ -82,7 +82,7 @@ export default function HomePage() {
           >
             <button
               onClick={() => setIsBookingOpen(true)}
-              className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C8852E] hover:text-white font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide text-center cursor-pointer shadow-lg hover:shadow-[#C8852E]/10 inline-flex items-center justify-center gap-2 font-medium whitespace-nowrap"
+              className="bg-[#D9A38A] text-[#1E1918] hover:bg-[#C08264] hover:text-[#1E1918] font-body text-sm px-8 py-4 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide text-center cursor-pointer shadow-lg hover:shadow-[#C08264]/10 inline-flex items-center justify-center gap-2 font-medium whitespace-nowrap"
             >
               <Calendar className="w-4.5 h-4.5" />
               Book a free discovery call
@@ -132,7 +132,7 @@ export default function HomePage() {
       <section className="py-24 bg-[#F2ECE3]/50 relative border-y border-[#F2ECE3] overflow-hidden">
         <ScrollReveal variant="up" duration={0.85}>
           <div className="max-w-4xl mx-auto px-6 text-center space-y-8">
-            <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#C8852E] block">
+            <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#C08264] block">
               The Awakening
             </span>
             <h2 className="font-display text-4xl md:text-5xl text-[#322C2B] font-light tracking-tight leading-tight max-w-2xl mx-auto">
@@ -146,7 +146,7 @@ export default function HomePage() {
               <p>
                 My work isn&apos;t to hand you something you&apos;re missing. It&apos;s to help you clear away what&apos;s been sitting on top of it, so what was always yours can come back to the surface.
               </p>
-              <p className="font-display italic text-[#C8852E] text-2xl pt-4">
+              <p className="font-display italic text-[#C08264] text-2xl pt-4">
                 &ldquo;You do the walking. I walk beside you, and I know the terrain.&rdquo;
               </p>
             </div>
@@ -204,7 +204,7 @@ export default function HomePage() {
               <div className="pt-4">
                 <Link
                   href="/about"
-                  className="bg-[#D9A38A] hover:bg-[#C8852E] text-[#1E1918] hover:text-white font-body text-sm px-8 py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide inline-flex items-center gap-2 font-medium hover:shadow-md"
+                  className="bg-[#D9A38A] hover:bg-[#C08264] text-[#1E1918] hover:text-[#1E1918] font-body text-sm px-8 py-3.5 rounded-full transition-all duration-300 ease-out hover:-translate-y-0.5 active:scale-95 tracking-wide inline-flex items-center gap-2 font-medium hover:shadow-md"
                 >
                   Read my full story 
                   <ArrowRight className="w-4 h-4" />
@@ -222,7 +222,7 @@ export default function HomePage() {
           
           <div className="space-y-6">
             <ScrollReveal variant="right" duration={0.9}>
-              <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#C8852E] block">
+              <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#C08264] block">
                 The Integration Principle
               </span>
               <h2 className="font-display text-4xl md:text-5xl text-[#322C2B] font-light leading-tight tracking-tight">
@@ -244,7 +244,7 @@ export default function HomePage() {
               <div className="pt-2">
                 <Link
                   href="/modalities"
-                  className="text-[#C8852E] hover:text-[#9E6418] font-body text-base font-medium inline-flex items-center gap-1.5 group transition-all"
+                  className="text-[#C08264] hover:text-[#A66E53] font-body text-base font-medium inline-flex items-center gap-1.5 group transition-all"
                 >
                   Explore how I work
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -257,7 +257,7 @@ export default function HomePage() {
           <div>
             <ScrollReveal variant="left" duration={0.9} delay={0.15}>
               <div className="bg-[#F2ECE3]/40 border border-[#F2ECE3] rounded-2xl p-8 md:p-10 space-y-6 relative hover:scale-[1.01] hover:shadow-md transition-all duration-300 ease-out">
-                <div className="absolute top-4 right-4 text-[#C8852E]/10 select-none">
+                <div className="absolute top-4 right-4 text-[#D9A38A]/10 select-none">
                   <Compass className="w-24 h-24 stroke-[1]" />
                 </div>
                 
@@ -268,12 +268,13 @@ export default function HomePage() {
                 <div className="space-y-4">
                   {[
                     { title: 'Subconscious Layer', tech: 'Hypnotherapy', desc: 'Direct patterns rewrite' },
-                    { title: 'Physiological Release', tech: 'Whole Body Reset & Massages', desc: 'Somatic alignment & deep tension purge' },
-                    { title: 'Atmospheric surrender', tech: 'Transformative Breath & Flowing Water', desc: 'Meditation in absolute natural element support' },
-                    { title: 'Mentorship core', tech: 'Lifestyle Coaching', desc: 'Long-term anchoring & integration' }
+                    { title: 'Physiological Release', tech: 'Body Reset & Massages', desc: 'Somatic realignment & deep tension purge' },
+                    { title: 'Atmospheric surrender', tech: 'Transformative Breathwork', desc: 'Nervous system release' },
+                    { title: 'Aquatic flow', tech: 'Water Therapy', desc: 'Harmonic flow aquatic healing arts' },
+                    { title: 'Mentorship core', tech: 'Life(style) and health coaching & mentoring', desc: 'Long-term anchoring & integration' }
                   ].map((val, idx) => (
                     <div key={idx} className="flex gap-4 items-start">
-                      <span className="font-mono text-xs text-[#C8852E] bg-white border border-[#F2ECE3] w-6 h-6 flex items-center justify-center rounded-full mt-0.5 shrink-0">
+                      <span className="font-mono text-xs text-[#C08264] bg-white border border-[#F2ECE3] w-6 h-6 flex items-center justify-center rounded-full mt-0.5 shrink-0">
                         0{idx+1}
                       </span>
                       <div>
@@ -310,7 +311,7 @@ export default function HomePage() {
               {
                 quote: "I had so much tension and pain in my neck and shoulders for years that I couldn't even turn my head anymore. After only one session it was all gone.",
                 author: "Anna",
-                location: "Ubud"
+                location: "Client"
               },
               {
                 quote: "Investing time with Miro has transformed my life on multiple levels. I am now stronger, healthier, happier, and more fulfilled… This transformation has also made me a better entrepreneur. I now consider him one of my absolute closest friends.",
@@ -333,7 +334,7 @@ export default function HomePage() {
                 <div 
                   className="bg-white border border-[#F2ECE3] shadow-lg shadow-[#322C2B]/5 rounded-xl p-8 relative flex flex-col justify-between items-start hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-xl hover:shadow-[#322C2B]/6 transition-all duration-300 ease-out cursor-pointer w-full"
                 >
-                  <div className="text-[#C8852E] flex gap-0.5 mb-6">
+                  <div className="text-[#D9A38A] flex gap-0.5 mb-6">
                     {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                   </div>
                   <blockquote className="font-display italic text-[#322C2B] text-lg leading-relaxed mb-6 font-light">
@@ -352,7 +353,7 @@ export default function HomePage() {
             <ScrollReveal variant="up" duration={0.8} delay={0.3}>
               <Link
                 href="/reviews"
-                className="border-b border-[#C8852E] text-[#C8852E] hover:text-[#9E6418] hover:border-[#9E6418] pb-1 font-body text-sm font-medium transition-colors"
+                className="border-b border-[#C08264] text-[#C08264] hover:text-[#A66E53] hover:border-[#A66E53] pb-1 font-body text-sm font-medium transition-colors"
               >
                 Read more reviews &rarr;
               </Link>
@@ -366,7 +367,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 space-y-16">
           <ScrollReveal variant="up" duration={0.8}>
             <div className="text-center space-y-3">
-              <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#C8852E] block">
+              <span className="font-body text-xs font-semibold tracking-[0.3em] uppercase text-[#C08264] block">
                 Values Filter
               </span>
               <h2 className="font-display text-4xl md:text-5xl text-[#322C2B] font-light tracking-tight pb-2">
@@ -382,35 +383,35 @@ export default function HomePage() {
             
             {/* THIS IS FOR YOU IF */}
             <ScrollReveal variant="right" duration={0.85}>
-              <div className="bg-white border border-[#F2ECE3] rounded-2xl p-8 md:p-10 shadow-lg shadow-[#322C2B]/5 border-t-4 border-t-[#C8852E] space-y-6 hover:scale-[1.01] hover:shadow-xl transition-all duration-300 ease-out">
+              <div className="bg-white border border-[#F2ECE3] rounded-2xl p-8 md:p-10 shadow-lg shadow-[#322C2B]/5 border-t-4 border-t-[#D9A38A] space-y-6 hover:scale-[1.01] hover:shadow-xl transition-all duration-300 ease-out">
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-[#C8852E]/10 rounded-lg text-[#C8852E]">
+                  <div className="p-2 bg-[#D9A38A]/10 rounded-lg text-[#C08264]">
                     <Check className="w-5 h-5 stroke-[2.5]" />
                   </div>
                   <h4 className="font-display text-xl text-[#322C2B] tracking-wide font-light">
-                    This with serve you beautifully if:
+                    This will serve you beautifully if:
                   </h4>
                 </div>
 
                 <ul className="space-y-4 font-body text-sm text-[#6E655E] font-light leading-relaxed">
                   <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-[#C8852E] shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-[#C08264] shrink-0 mt-0.5" />
                     <span>You feel stuck — like there is real potential in you that your current life is not holding.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-[#C8852E] shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-[#C08264] shrink-0 mt-0.5" />
                     <span>You have been unwell for a while, you have tried a lot of things, and part of you still hopes change is possible.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-[#C8852E] shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-[#C08264] shrink-0 mt-0.5" />
                     <span>You are tired of feeling afraid of life, and you want to feel the joy of it again.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-[#C8852E] shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-[#C08264] shrink-0 mt-0.5" />
                     <span>You believe — even faintly — that people are good at the core, and that things can get better.</span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <Check className="w-4 h-4 text-[#C8852E] shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-[#C08264] shrink-0 mt-0.5" />
                     <span className="font-medium text-[#322C2B]">You are ready to do the work, not have it done to you.</span>
                   </li>
                 </ul>
