@@ -159,7 +159,7 @@ export default function DiscoveryModal({ isOpen, onClose }: DiscoveryModalProps)
                         <option>Private Retreat (Bali, One-on-One)</option>
                         <option>Group Retreat (Bali & Worldwide)</option>
                         <option>Transformative Breathwork</option>
-                        <option>Whole Body Reset Therapy</option>
+                        <option>Body Reset Therapy</option>
                         <option>Massages & Chi Core Release</option>
                         <option>Harmonic Flow Aquatic/Water Healing</option>
                         <option>Coaching & Mentoring</option>

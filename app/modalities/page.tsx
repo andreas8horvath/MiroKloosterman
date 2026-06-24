@@ -58,7 +58,7 @@ export default function ModalitiesHubPage() {
       
       {/* Editorial Header (True Fullscreen) */}
       <FullscreenHero
-        backgroundImage="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&q=80&w=2000"
+        backgroundImage="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=80&w=2000"
         overlayOpacity={0.5}
       >
         <div className="max-w-4xl mx-auto space-y-6">

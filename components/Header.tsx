@@ -108,7 +108,7 @@ export default function Header({ onOpenBooking }: { onOpenBooking: () => void })
                   </button>
 
                   {/* Dropdown Card */}
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-72 bg-white border border-[#F2ECE3] shadow-xl rounded-xl p-4 mt-1 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 origin-top transform scale-95 group-hover:scale-100 grid gap-2">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 w-72 bg-white border border-[#F2ECE3] shadow-xl rounded-xl p-4 mt-1 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 origin-top transform scale-95 group-hover:scale-100 grid gap-2 before:absolute before:content-[''] before:w-full before:h-4 before:-top-4 before:left-0">
                     {dropdownItems.map((item) => (
                       <Link
                         key={item.href}

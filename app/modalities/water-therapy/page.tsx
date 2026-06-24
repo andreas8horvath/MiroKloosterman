@@ -10,11 +10,11 @@ export default function WaterTherapyPage() {
   const stages = [
     {
       title: 'Phase I — On the Surface',
-      desc: 'Supported securely by specialized neck and knee floats and a warm water pillow. Your breathing and nervous system slow down into a deeply meditative, floating, and restful state — often accompanied by sound therapy and slow rotational movement.'
+      desc: 'Supported by a floating pillow and leg floaters. Your breathing and nervous system slow down into a deeply meditative, floating, and restful state — accompanied by sound therapy and massage.'
     },
     {
       title: 'Phase II — Under the Water',
-      desc: 'For short, completely safe, and held moments. With prior agreement and nose clips, we transition the body beneath the warm water. Your mind drops into something close to the primordial storage memory of the womb — a profound, calm space for deep emotional release.'
+      desc: 'Starting with short moments and slowly building up to longer moments, completely safe, and held moments. With prior agreement and nose clip, we transition the body beneath the warm water. Your mind drops into something close to the primordial storage memory of the womb — a profound, calm space for deep emotional release.'
     },
     {
       title: 'Phase III — Grounding',
@@ -60,7 +60,7 @@ export default function WaterTherapyPage() {
                   In an aquatic water therapy session, you are supported and held with care in warm water while you surrender into a state of absolute, deep nervous relaxation that most modern adults rarely experience.
                 </p>
                 <p className="font-medium text-[#322C2B] mt-2">
-                  Harmonic Flow was developed by my partner, <strong className="font-semibold">Damla Yaku</strong>, through years of dedicated cross-cultural research into the aquatic healing sciences. We offer it within our retreats and as standalone Bali sessions.
+                  Harmonic Flow was developed by my partner, <strong className="font-semibold">Damla Yaku</strong>, through years of dedicated cross-cultural research into the aquatic healing sciences. We use it within our retreats and as standalone sessions.
                 </p>
               </div>
             </ScrollReveal>
@@ -70,7 +70,7 @@ export default function WaterTherapyPage() {
             <ScrollReveal variant="right" duration={0.8}>
               <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-lg border border-[#F2ECE3] group">
                 <img
-                  src="https://picsum.photos/seed/miro_water_flow/800/450"
+                  src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1200"
                   alt="Aquatic water healing support session"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover grayscale-[10%] brightness-95 transition-transform duration-1000 group-hover:scale-105"
@@ -116,6 +116,27 @@ export default function WaterTherapyPage() {
               </div>
             </ScrollReveal>
           ))}
+        </div>
+      </section>
+
+      {/* Surrender Journals Section */}
+      <section className="py-16 bg-white border-t border-[#F2ECE3]">
+        <div className="max-w-4xl mx-auto px-6 text-center space-y-8">
+          <ScrollReveal variant="up" duration={0.8}>
+            <span className="font-body text-xs font-semibold tracking-[0.25em] uppercase text-[#6E655E] block">
+              Surrender Journals
+            </span>
+            <div className="mt-8 bg-[#FBF8F3] border border-[#F2ECE3] rounded-2xl p-8 md:p-12 text-center max-w-2xl mx-auto shadow-sm">
+              <blockquote className="font-display italic text-lg md:text-xl text-[#322C2B] leading-relaxed mb-6 font-light">
+                &ldquo;Something that felt more like an inner journey than a physical activity. The anxiety I was carrying completely melted away. The gentle floating felt like being held by nature itself — warm, embracing, deeply soothing. I felt truly safe in your presence, especially in the water.&rdquo;
+              </blockquote>
+              <div className="border-t border-[#F2ECE3] pt-4 text-xs font-body flex justify-center items-center">
+                <div>
+                  <span className="font-semibold text-[#322C2B] block">WATER THERAPY CLIENT</span>
+                </div>
+              </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

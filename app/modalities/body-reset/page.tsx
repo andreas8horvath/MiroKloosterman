@@ -18,7 +18,7 @@ export default function BodyResetPage() {
       
       {/* Editorial Header (True Fullscreen) */}
       <FullscreenHero
-        backgroundImage="https://images.unsplash.com/photo-1505236858219-8359eb29e3a9?auto=format&fit=crop&q=80&w=2000"
+        backgroundImage="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=2000"
         overlayOpacity={0.45}
       >
         <div className="max-w-4xl mx-auto space-y-6">
@@ -26,7 +26,7 @@ export default function BodyResetPage() {
             Structural Realignment
           </span>
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-light text-[#FBF8F3] leading-[1.12] tracking-tight">
-            Whole Body Reset Therapy
+            Body Reset Therapy
           </h1>
           <p className="font-body text-base sm:text-lg md:text-2xl text-[#E6E1DA]/95 font-light leading-relaxed max-w-2xl mx-auto italic">
             &ldquo;When one part of the body is stuck, the whole system compensates. This resets the whole.&rdquo;
@@ -77,7 +77,7 @@ export default function BodyResetPage() {
       <section className="py-24 max-w-5xl mx-auto px-6 space-y-12">
         <ScrollReveal variant="up" duration={0.8}>
           <h3 className="font-display text-3xl text-center text-[#322C2B] font-light">
-            What the Whole Reset can treat:
+            What the Body Reset can treat:
           </h3>
         </ScrollReveal>
 

@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Mail, Phone, Instagram, Send, ArrowUp } from 'lucide-react';
 import WhatsAppIcon from '@/components/WhatsAppIcon';
+import NewsletterSubscription from '@/components/NewsletterSubscription';
 
 export default function Footer({ onOpenBooking }: { onOpenBooking: () => void }) {
   const handleScrollToTop = () => {
@@ -11,12 +12,18 @@ export default function Footer({ onOpenBooking }: { onOpenBooking: () => void })
   };
 
   return (
-    <footer className="bg-[#2C4A47] text-white py-16 md:py-24 border-t border-[#5A7470]/30 relative overflow-hidden">
+    <footer className="bg-[#2C4A47] text-white py-16 md:py-24 border-t border-[#5A7470]/30 relative overflow-hidden" id="app-main-footer">
       {/* Background soft radial glow mapping "Rising Light" grounding energy */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#D9A38A]/10 to-transparent rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 pb-16 border-b border-[#5A7470]/40">
+        
+        {/* Newsletter Subscription Row */}
+        <div className="mb-20" id="footer-newsletter-container">
+          <NewsletterSubscription />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 pb-16 border-b border-[#5A7470]/40" id="footer-grid-columns">
           
           {/* Brand & Mission Column */}
           <div className="flex flex-col space-y-4">

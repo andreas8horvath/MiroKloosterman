@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Award, CheckCircle, Info, Heart } from 'lucide-react';
 import CallToActionSection from '@/components/CallToActionSection';
 import ScrollReveal from '@/components/ScrollReveal';
@@ -50,10 +51,10 @@ export default function MassagesPage() {
                     By softly massaging the abdominal cavity and activating specific acupressure trigger points, we connect with the physical roots of mental and emotional stress, helping to purge and realign what has been bound there — often for years.
                   </p>
                   <p>
-                    It is completely common and natural for raw emotions to surface during a session — including quiet crying — as deep structural tension finally moves, liquefies, and dissolves. As your core organs begin to move more freely, you will digest physical nutrients better. And, often, you will digest the events of your life a little better too.
+                    It is completely common and natural for raw emotions to surface during a session — including crying — as deep structural tension finally moves, liquefies, and dissolves. As your core organs begin to move more freely, you will digest physical nutrients better. And, often, you will digest the events of your life a little better too.
                   </p>
                   <p className="italic font-display text-[#C08264] text-base mt-2">
-                    A typical therapeutic session is around 90 minutes. Longer is possible.
+                    A typical therapeutic session is around 90 minutes.
                   </p>
                 </div>
               </ScrollReveal>
@@ -65,9 +66,17 @@ export default function MassagesPage() {
                   <div className="text-[#C08264] italic font-display text-2xl leading-relaxed font-light mb-6">
                     &ldquo;What seems to be &apos;just a massage&apos; has been life-changing for me. Miro created the safest space and took all the time to be there for me. After this session, my life shifted completely in a positive way.&rdquo;
                   </div>
-                  <div className="border-t border-[#F2ECE3] pt-4 text-xs font-body">
-                    <span className="font-semibold text-[#322C2B] block">Maria Johanna</span>
-                    <span className="text-[#6E655E] text-[10px] uppercase tracking-wider">Chi Core Client</span>
+                  <div className="border-t border-[#F2ECE3] pt-4 text-xs font-body flex justify-between items-end">
+                    <div>
+                      <span className="font-semibold text-[#322C2B] block">Maria Johanna</span>
+                      <span className="text-[#6E655E] text-[10px] uppercase tracking-wider">Chi Core Client</span>
+                    </div>
+                    <Link
+                      href="/reviews"
+                      className="text-[#C08264] hover:text-[#8C5135] font-body text-xs font-medium transition-colors inline-flex items-center gap-1"
+                    >
+                      Read full reviews &rarr;
+                    </Link>
                   </div>
                 </div>
               </ScrollReveal>

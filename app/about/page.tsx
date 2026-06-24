@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Award, Compass, Heart, Shield, Sparkles, BookOpen } from 'lucide-react';
+import { Compass, Heart, Shield, Sparkles, BookOpen, HeartHandshake, Wind, RefreshCw, Sparkle, Waves } from 'lucide-react';
 import { motion } from 'motion/react';
 import CallToActionSection from '@/components/CallToActionSection';
 import ScrollReveal from '@/components/ScrollReveal';
@@ -10,13 +10,13 @@ import FullscreenHero from '@/components/FullscreenHero';
 
 export default function AboutPage() {
   const credentials = [
-    'Life Coach & Mentorship Practitioner',
-    'Breathwork Facilitator',
-    'Hypnotherapist',
-    'Body Reset Therapist',
-    'Chi Core Release (Chi Nei Tsang) Massage',
-    'Reiki Master',
-    'Trained in Harmonic Flow Aquatic Healing Arts'
+    { name: 'Life Coach & Mentorship Practitioner', icon: HeartHandshake },
+    { name: 'Breathwork Facilitator', icon: Wind },
+    { name: 'Hypnotherapist', icon: Compass },
+    { name: 'Body Reset Therapist', icon: RefreshCw },
+    { name: 'Chi Core Release (Chi Nei Tsang) Massage', icon: Heart },
+    { name: 'Reiki Master', icon: Sparkle },
+    { name: 'Trained in Harmonic Flow Aquatic Healing Arts', icon: Waves }
   ];
 
   const beliefs = [
@@ -173,24 +173,36 @@ export default function AboutPage() {
       <section className="py-24 max-w-4xl mx-auto px-6 space-y-12 overflow-hidden">
         <ScrollReveal variant="up" duration={0.8}>
           <div className="text-center space-y-3">
-            <Award className="w-8 h-8 text-[#C08264] mx-auto opacity-80" />
-            <h2 className="font-display text-3xl md:text-4xl text-[#322C2B] font-light mt-2">
+            <h2 className="font-display text-3xl md:text-4xl text-[#322C2B] font-light">
               My Background & Training
             </h2>
-            <p className="font-body text-sm text-[#6E655E] uppercase font-light tracking-wide mt-2">
+            <p className="font-body text-xs md:text-sm text-[#6E655E] uppercase font-light tracking-[0.2em]">
               Working with health and lifestyle since 2001
             </p>
           </div>
         </ScrollReveal>
 
         <ScrollReveal variant="up" duration={0.85} delay={0.15}>
-          <div className="bg-white border border-[#F2ECE3] rounded-2xl p-6 md:p-10 shadow-lg shadow-[#322C2B]/5 divide-y divide-[#F2ECE3]/60 font-body text-sm text-[#322C2B] font-light">
-            {credentials.map((cred, idx) => (
-              <div key={idx} className="py-4 md:py-5 flex items-center gap-3 first:pt-0 last:pb-0">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D9A38A]/60 shrink-0" />
-                <span className="font-medium text-[#322C2B]">{cred}</span>
-              </div>
-            ))}
+          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            {credentials.map((cred, idx) => {
+              const isLast = idx === credentials.length - 1;
+              const Icon = cred.icon;
+              return (
+                <div 
+                  key={idx} 
+                  className={`bg-white border border-[#F2ECE3] rounded-xl p-5 md:p-6 transition-all duration-300 hover:border-[#D9A38A]/50 hover:bg-[#FBF8F3]/40 hover:shadow-md hover:shadow-[#322C2B]/5 flex items-center gap-4 group ${
+                    isLast ? 'md:col-span-2' : ''
+                  }`}
+                >
+                  <div className="text-[#C08264]/80 bg-[#FBF8F3] w-10 h-10 rounded-full border border-[#F2ECE3] flex items-center justify-center shrink-0 group-hover:bg-[#C08264]/10 group-hover:text-[#C08264] transition-all duration-300">
+                    <Icon className="w-5 h-5 stroke-[1.5]" />
+                  </div>
+                  <span className="font-display font-light text-base md:text-lg text-[#322C2B] leading-snug">
+                    {cred.name}
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </ScrollReveal>
 

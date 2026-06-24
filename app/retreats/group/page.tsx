@@ -13,11 +13,11 @@ export default function GroupRetreatPage() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   
   const programOfferings = [
-    { title: 'Breathwork Journeys', desc: 'Somatic journeying utilizing hyper-oxygenation to release emotional tissue blockages.' },
-    { title: 'Harmonic Flow Aquatic Healing Arts', desc: 'Water therapy surrendering in warm pools, shifting nervous systems to restorative womb-like layers.' },
+    { title: 'Breathwork Journeys', desc: 'Somatic journeying to release emotional tissue blockages.' },
+    { title: 'Harmonic Flow Aquatic Healing Arts', desc: 'Water therapy surrendering in warm water, shifting nervous systems to restorative state.' },
     { title: 'Voice Activation & Singing Circles', desc: 'Awakening expression frequencies, collective singing therapy, and throat chakra release.' },
-    { title: 'Somatic Body & Energy Practices', desc: 'Reiki, meridian balancing, alignment therapies, and fluid chi movement.' },
-    { title: 'Ecstatic Dance & Sound Healing', desc: 'Rhythmic, judgment-free movement meditation accompanied by organic bowls and vibrations.' },
+    { title: 'Somatic Body & Energy Practices', desc: 'Morning practices to activate the body. And awareness of energies true playfull practices.' },
+    { title: 'Ecstatic Dance & Sound Healing', desc: 'Rhythmic, judgment-free movement meditation. And drift away while listening to different sounds to calm the mind.' },
     { title: 'The Art of Expression', desc: 'Creative arts, journaling, acting, sharing circle.' },
     { title: 'Manifestation & Mindset Practice', desc: 'Aligning vision, belief design, and conscious habit integration.' }
   ];
@@ -58,7 +58,7 @@ export default function GroupRetreatPage() {
                   In a group retreat you do your own deep, highly personal inner work — but inside a safe, loving, beautifully held collective. Surrounded by like-minded people, connection and vulnerability themselves become key ingredients of the medicine.
                 </p>
                 <p>
-                  These retreats open expansive space for emotional, energetic and spiritual healing, for unconditional self-love, creative visual expression, absolute joy, and a real, grounding sense of belonging — to yourself, to others, and to the overarching natural world.
+                  These retreats open expansive space for emotional, energetic and spiritual healing, for unconditional self-love, creative visual expression, absolute joy, and a real, grounding sense of belonging — to yourself, to others, and to nature.
                 </p>
               </div>
               

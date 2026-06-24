@@ -36,7 +36,7 @@ export default function BreathworkPage() {
           <div className="lg:col-span-6 space-y-6">
             <ScrollReveal variant="left" duration={0.8}>
               <h2 className="font-display text-2xl md:text-3xl text-[#322C2B] font-light">
-                Bypassing the conscious wall.
+                Bypassing the conscious and subconscious wall.
               </h2>
               <div className="space-y-4 text-sm md:text-base text-[#6E655E] font-light leading-relaxed mt-4">
                 <p>
@@ -53,7 +53,7 @@ export default function BreathworkPage() {
             <ScrollReveal variant="right" duration={0.8}>
               <div className="relative w-full max-w-md aspect-video rounded-xl overflow-hidden shadow-lg border border-[#F2ECE3] group">
                 <img
-                  src="https://picsum.photos/seed/miro_breathe_air/800/450"
+                  src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1200"
                   alt="Breathing meditation in nature"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover grayscale-[10%] brightness-95 transition-transform duration-1000 group-hover:scale-105"
